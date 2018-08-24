@@ -14,6 +14,7 @@
     "no-shadow": "off",
     "no-use-before-define": "off",
     "no-undef": "off",
+    "no-underscore-dangle": "off",
     "no-unused-vars": "off",
     "no-var": "off",
     "prefer-const": "off",
