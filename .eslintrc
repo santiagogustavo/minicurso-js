@@ -1,11 +1,21 @@
 {
   "extends": ["airbnb"],
   "rules": {
+    "block-scoped-var": "off",
     "eqeqeq": "off",
+    "func-names": "off",
+    "guard-for-in": "off",
     "import/newline-after-import": "off",
     "no-console": "off",
+    "no-constant-condition": "off",
+    "no-restricted-syntax": "off",
+    "no-shadow": "off",
+    "no-use-before-define": "off",
+    "no-undef": "off",
+    "no-unused-vars": "off",
     "no-var": "off",
     "prefer-template": "off",
+    "no-redeclare": "off",
     "vars-on-top": "off"
   }
 }
