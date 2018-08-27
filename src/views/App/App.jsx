@@ -8,6 +8,7 @@ import {
   Logo,
   Page,
   LinkLogo,
+  LogoText,
 } from './styles';
 
 import Root from '../Root';
@@ -19,7 +20,7 @@ const App = () => (
       <LinkLogo to="/">
         <Logo src={logo} />
       </LinkLogo>
-      <h1 className="App-title">Minicurso JS</h1>
+      <LogoText>Minicurso JS</LogoText>
     </Header>
     <Page>
       <Switch>
