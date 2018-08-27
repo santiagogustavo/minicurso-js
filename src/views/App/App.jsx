@@ -3,19 +3,28 @@ import { Switch, Route } from 'react-router-dom';
 
 import logo from 'assets/imgs/js.png';
 import './App.css';
-import { Header, Logo, Page } from './styles';
+import {
+  Header,
+  Logo,
+  Page,
+  LinkLogo,
+} from './styles';
 
 import Root from '../Root';
+import WtfIsJs from '../WtfIsJs';
 
 const App = () => (
   <Fragment>
     <Header>
-      <Logo src={logo} />
+      <LinkLogo to="/">
+        <Logo src={logo} />
+      </LinkLogo>
       <h1 className="App-title">Minicurso JS</h1>
     </Header>
     <Page>
       <Switch>
         <Route exact path="/" component={Root} />
+        <Route path="/1-wtf-is-js" component={WtfIsJs} />
       </Switch>
     </Page>
   </Fragment>
