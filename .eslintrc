@@ -7,6 +7,7 @@
     "func-names": "off",
     "guard-for-in": "off",
     "import/newline-after-import": "off",
+    "max-len": [2, 120, 4],
     "no-console": "off",
     "no-const-assign": "off",
     "no-constant-condition": "off",
