@@ -4,19 +4,39 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5"
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "styled-components": "^3.4.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
+    "lint": "eslint src/",
+    "prepush": "yarn lint",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "gh-pages": "^1.2.0"
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-styled-components": "^1.5.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^1.2.0",
+    "husky": "^0.14.3",
+    "react-app-rewired": "^1.5.2"
   }
 }

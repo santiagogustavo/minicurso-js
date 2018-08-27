@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true,
+    "jest": true
+  },
+  "extends": ["airbnb"],
+  "parser": "babel-eslint",
+  "plugins": ["react"],
+  "rules": {
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "no-console": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-one-expression-per-line": "off"
+  }
+}
