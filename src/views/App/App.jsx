@@ -7,6 +7,7 @@ import './App.css';
 
 import Root from '../Root';
 import WtfIsJs from '../WtfIsJs';
+import Basics from '../Basics';
 
 const Page = styled.div`
   padding: 5% 15%;
@@ -19,6 +20,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Root} />
         <Route path="/1-wtf-is-js" component={WtfIsJs} />
+        <Route path="/2-basics" component={Basics} />
       </Switch>
     </Page>
   </Fragment>

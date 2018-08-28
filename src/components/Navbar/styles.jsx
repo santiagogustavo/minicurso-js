@@ -96,4 +96,6 @@ export const ChapterLink = styled(Link)`
     background: #FDD835;
     text-shadow: #212121 0 15px 40px;
   }
+  &:focus { outline: none; }
+  &::-moz-focus-inner { outline: none; }  
 `;
