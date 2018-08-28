@@ -6,6 +6,11 @@ export const Shine = keyframes`
   100% { transform: skewX(-15deg) translateX(120px); }
 `;
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 export const Header = styled.header`
   display: flex;
   align-items: center;
@@ -20,10 +25,6 @@ export const Header = styled.header`
 export const Logo = styled.img`
   height: 80px;
   width: 80px;
-`;
-
-export const Page = styled.div`
-  padding: 5% 15%;
 `;
 
 export const LinkLogo = styled(Link)`
@@ -55,7 +56,44 @@ export const LinkLogo = styled(Link)`
 `;
 
 export const LogoText = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin-left: 25px;
   font-size: 35px;
   font-weight: 700;
+  & > a {
+    color: #e4e4e4;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+  }
+`;
+
+export const GitLogo = styled.img`
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+`;
+
+export const Chapters = styled.div`
+  display: flex;
+  background-color: #424242;
+`;
+
+export const ChapterLink = styled(Link)`
+  color: #fafafa;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 10px 50px;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  &:hover {
+    transform: scale(1.05);
+    background: #FDD835;
+    text-shadow: #212121 0 15px 40px;
+  }
 `;

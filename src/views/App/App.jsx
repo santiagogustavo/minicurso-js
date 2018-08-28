@@ -1,27 +1,20 @@
 import React, { Fragment } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import styled from 'styled-components';
 
-import logo from 'assets/imgs/js.png';
+import Navbar from 'components/Navbar';
 import './App.css';
-import {
-  Header,
-  Logo,
-  Page,
-  LinkLogo,
-  LogoText,
-} from './styles';
 
 import Root from '../Root';
 import WtfIsJs from '../WtfIsJs';
 
+const Page = styled.div`
+  padding: 5% 15%;
+`;
+
 const App = () => (
   <Fragment>
-    <Header>
-      <LinkLogo to="/">
-        <Logo src={logo} />
-      </LinkLogo>
-      <LogoText>Minicurso JS</LogoText>
-    </Header>
+    <Navbar />
     <Page>
       <Switch>
         <Route exact path="/" component={Root} />
