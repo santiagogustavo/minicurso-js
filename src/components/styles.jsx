@@ -2,12 +2,16 @@ import styled from 'styled-components';
 import SyntaxHighlighter from 'react-syntax-highlighter/prism';
 
 export const H1 = styled.h1`
+  display: flex;
+  align-items: center;
   color: #424242;
   font-size: 46px;
   font-weight: 700;
 `;
 
 export const H2 = styled.h2`
+  display: flex;
+  align-items: center;
   color: #424242;
   margin-top: 42px;
   font-size: 38px;
@@ -15,6 +19,8 @@ export const H2 = styled.h2`
 `;
 
 export const H3 = styled.h3`
+  display: flex;
+  align-items: center;
   color: #4e4e4e;
   margin-top: 28px;
   margin-bottom: 12px;
