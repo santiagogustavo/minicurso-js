@@ -37,8 +37,8 @@ const Basics = () => (
         <CodeFrame
           title="basics/1_hello.js"
           width="100%"
-          height="100%"
-          src="//jsfiddle.net/uz2ryax3/1/embedded/js,result/dark/"
+          height="auto"
+          src="//jsfiddle.net/santiagogustavo/b1an8Lf7/2/embedded/js,result/dark/"
           frameBorder="0"
         />
       </CodeArea>
@@ -60,10 +60,90 @@ const Basics = () => (
           </strong>
         </CodeComment>
         <CodeFrame
-          title="basics/1_hello.js"
+          title="basics/2_operators.js"
           width="100%"
-          height="100%"
-          src="//jsfiddle.net/kdLpyua4/1/embedded/js,result/dark/"
+          height="auto"
+          src="//jsfiddle.net/santiagogustavo/gq0uwamt/1/embedded/js,result/dark/"
+          frameBorder="0"
+        />
+      </CodeArea>
+      <H2>2.3. Comentários</H2>
+      <CodeArea>
+        <CodeComment>
+          Assim como nas demais linguagens, é possível <strong>(e recomendado)</strong> colocar comentários nos códigos.
+          Novamente, a sintaxe é muito familiar e funciona como esperado, onde os comentários podem ser colocados&nbsp;
+          <strong>após as expressões em uma linha, em uma linha separada ou ocupar várias linhas</strong>.
+        </CodeComment>
+        <CodeFrame
+          title="basics/3_comments.js"
+          width="100%"
+          height="auto"
+          src="//jsfiddle.net/santiagogustavo/fhse2br5/embedded/js,result/dark/"
+          frameBorder="0"
+        />
+      </CodeArea>
+      <H2>2.4. Tipos de dados</H2>
+      <CodeArea>
+        <CodeComment>
+          Existem duas &quot;classes&quot; de tipos de dados:
+          <ul>
+            <li>
+              Os tipos <strong>primitivos</strong> são tratados como entidades <strong>imutáveis e básicas</strong>, nas
+              quais os valores já estão definidos previamente e não podem ser modificados.
+            </li>
+            <li>
+              O tipo <strong>Object</strong> é utilizado para definir outras &quot;macros&quot; na linguagem, tanto a
+              nível de implementação <strong>(estruturas presentes na linguagem)</strong> quanto a nível de usuário
+              <strong>(objetos, classes e entidades criadas em código).</strong>
+            </li>
+          </ul>
+          No exemplo, são verificados os tipos de alguns valores <strong>primitivos e Object</strong>, sendo eles:
+          <ul>
+            <li>
+              <strong>String:</strong> valores textuais
+            </li>
+            <li>
+              <strong>Number:</strong> valores numéricos reais
+            </li>
+            <li>
+              <strong>Boolean:</strong> true/false
+            </li>
+            <li>
+              <strong>Object:</strong> estruturas de objeto, instâncias de classe, macros, entre outros
+            </li>
+            <li>
+              <strong>Function:</strong> funções
+            </li>
+            <li>
+              <strong>Null:</strong> valor nulo (diferente de undefined)
+            </li>
+            <li>
+              <strong>Undefined:</strong> entidade indefinida (sem valor)
+            </li>
+          </ul>
+          Observe que <strong>Array</strong> é um valor do tipo <strong>Object</strong>. Esta é uma macro da linguagem!
+          <H3>typeof e instanceof</H3>
+          Estes operadores são utilizados para indicar <strong>tipo ou instância de classe</strong> para valores e
+          variáveis. Use-os sempre que estiver na dúvida, também são úteis para verificar&nbsp;
+          <strong>valores indefinidos, objetos vazios e outras condições &quot;tipadas&quot;.</strong>
+          <H3>Concatenação entre tipos</H3>
+          Aqui as coisas ficam um tanto confusas: alguns tipos podem ser concatenados para gerar novos valores, mas não
+          é recomendado, porém, que isso seja feito intuitivamente pelo operador <strong>&quot;+&quot;</strong>.&nbsp;
+          <strong>Para ilustrar ainda melhor: </strong>
+          <br /><br />
+          <iframe
+            title="destroyallsoftware wat"
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/BrB0oaSz8Nk"
+            frameBorder="0"
+          />
+        </CodeComment>
+        <CodeFrame
+          title="basics/4_datatypes.js"
+          width="100%"
+          height="auto"
+          src="//jsfiddle.net/santiagogustavo/hyemn3fo/embedded/js,result/dark/"
           frameBorder="0"
         />
       </CodeArea>

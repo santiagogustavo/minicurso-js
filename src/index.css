@@ -5,3 +5,7 @@ body {
   color: #717171;
   background: #fafafa;
 }
+
+li + li {
+  margin-top: 15px;
+}
