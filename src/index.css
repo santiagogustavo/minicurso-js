@@ -6,6 +6,14 @@ body {
   background: #fafafa;
 }
 
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #caac2a;
+  transition: color 0.2s ease;
+}
+a:hover { color: #e3c22f; }
+
 li + li {
   margin-top: 15px;
 }

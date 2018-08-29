@@ -146,8 +146,47 @@ const Basics = () => (
           <CodeFrame
             title="basics/4_datatypes.js"
             width="100%"
-            height="auto"
+            height="600"
             src="//jsfiddle.net/santiagogustavo/hyemn3fo/embedded/js,result/dark/"
+            frameBorder="0"
+          />
+        </CodeArea>
+      </Accordion>
+      <Accordion title="2.5. Variáveis">
+        <CodeArea>
+          <CodeComment>
+            Novamente a sintaxe é familiar: para instanciar uma variável,&nbsp;
+            <strong>declara-se ela com um nome e atribui-se um valor (não necessariamente na declaração).</strong>&nbsp;
+            Todos os operadores definidos até agora podem ser utilizados e o resultado pode ser armazenado.
+            <br /><br />
+            <strong>
+              É importante mencionar que nestes exemplos foi propositalmente utilizada a sintaxe &quot;var&quot; para
+              fins didáticos.&nbsp;
+            </strong>
+            A partir do ES6 (que é explicado no próximo capítulo), <strong>&quot;vars&quot;</strong> se tornaram
+            obsoletas e foram substituídas por outras estruturas.
+            <H3>Tipagem dinâmica</H3>
+            As variáveis em JS são <strong>fracamente tipadas</strong>. Isso significa que, uma vez que uma variável
+            é instanciada, ela <strong>pode receber valores de qualquer tipo de dado</strong> e o&nbsp;
+            <strong>valor/tipo pode ser modificado em qualquer instante.</strong>
+            <br /><br />
+            É uma boa prática, porém,&nbsp;
+            <strong>documentar e manter as variáveis em seus tipos &quot;originais&quot;</strong> para evitar
+            problemas de execução. Frameworks, bibliotecas e extensões da linguagem, como exemplo&nbsp;
+            <a href="https://www.typescriptlang.org/">Typescript</a> e&nbsp;
+            <a href="https://www.npmjs.com/package/prop-types">PropTypes</a>, exigem que os tipos sejam definidos e
+            fazem a comparação com os valores recebidos.
+            <H3>Backtick</H3>
+            O operador <strong>`` (também chamado de backtick)</strong> é muito utilizado para exibir valores de
+            variáveis dentro de uma <strong>String</strong>. É, inclusive, recomendado utilizar backticks no lugar
+            de <strong>&quot;+&quot;</strong> quando for necessário concatenar&nbsp;
+            <strong>Strings ou variáveis de tipos diferentes!</strong>
+          </CodeComment>
+          <CodeFrame
+            title="basics/5_variables.js"
+            width="100%"
+            height="auto"
+            src="//jsfiddle.net/santiagogustavo/xh84zLjo/1/embedded/js,result/dark/"
             frameBorder="0"
           />
         </CodeArea>
