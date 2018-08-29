@@ -191,6 +191,38 @@ const Basics = () => (
           />
         </CodeArea>
       </Accordion>
+      <Accordion title="2.6. Condicionais">
+        <CodeArea>
+          <CodeComment>
+            Assim como nas demais linguagens, as estruturas condicionais são definidas e funcionam como esperado:
+            <ul>
+              <li>
+                <strong>if/else, if/else if/else:</strong> avaliam o resultado de uma comparação ou expressão e
+                executam determinados blocos de código.
+              </li>
+              <li>
+                <strong>switch/case:</strong> compara o valor de uma variável e encaminha para casos específicos&nbsp;
+                <strong>(ou para um caso &quot;default&quot;)</strong>
+              </li>
+            </ul>
+            <H3>Comparador ternário</H3>
+            A comparação por&nbsp;
+            <strong>
+              [condição] ? [fluxo verdadeiro] : [fluxo falso] (também chamada de comparador ternário)&nbsp;
+            </strong>
+            é um <a href="https://en.wikipedia.org/wiki/Syntactic_sugar">syntax sugar</a> em JS.
+            Ela substitui diretamente condições <strong>if/else</strong>, e é muito utilizada para fazer atribuições
+            condicionais e renderizar blocos dinâmicos em <a href="https://reactjs.org/">React</a>.
+          </CodeComment>
+          <CodeFrame
+            title="basics/6_conditionals.js"
+            width="100%"
+            height="auto"
+            src="//jsfiddle.net/santiagogustavo/4Lvy9w0g/embedded/js,result/dark/"
+            frameBorder="0"
+          />
+        </CodeArea>
+      </Accordion>
     </Content>
   </Fragment>
 );
