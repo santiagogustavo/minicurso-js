@@ -33,7 +33,7 @@ export const Chevron = styled.div`
   )}
 `;
 
-export const ClickableH2 = H2.extend`
+export const ClickableH2 = styled(H2)`
   cursor: pointer;
   transition: all 0.2s ease;
   &:hover {

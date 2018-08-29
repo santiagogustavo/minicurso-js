@@ -132,7 +132,7 @@ const Basics = () => (
             <strong>valores indefinidos, objetos vazios e outras condições &quot;tipadas&quot;.</strong>
             <H3>Concatenação entre tipos</H3>
             Aqui as coisas ficam um tanto confusas: alguns tipos podem ser concatenados para gerar novos valores, mas
-            não é recomendado, porém, que isso seja feito intuitivamente pelo operador
+            não é recomendado, porém, que isso seja feito intuitivamente pelo operador&nbsp;
             <strong>&quot;+&quot;. Para ilustrar ainda melhor: </strong>
             <br /><br />
             <iframe
@@ -180,7 +180,7 @@ const Basics = () => (
             O operador <strong>`` (também chamado de backtick)</strong> é muito utilizado para exibir valores de
             variáveis dentro de uma <strong>String</strong>. É, inclusive, recomendado utilizar backticks no lugar
             de <strong>&quot;+&quot;</strong> quando for necessário concatenar&nbsp;
-            <strong>Strings ou variáveis de tipos diferentes!</strong>
+            <strong>Strings!</strong>
           </CodeComment>
           <CodeFrame
             title="basics/5_variables.js"
