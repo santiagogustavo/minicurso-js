@@ -223,6 +223,92 @@ const Basics = () => (
           />
         </CodeArea>
       </Accordion>
+      <Accordion title="2.7. Laços e Iteradores">
+        <CodeArea>
+          <CodeComment>
+            Laços, também chamados de <strong>estruturas de repetição</strong>, são definidos para blocos de código que
+            devem ser executados repetidamente. A repetição ocorre com a declaração de um&nbsp;
+            <strong>iterador (em um intervalo de valores) ou uma condição (enquanto ela for satisfeita)</strong>.
+            <br /><br />
+            Existem diversas formas de se escrever um laço, conforme pode ser visto nos exemplos através das
+            estruturas <strong>for, while e do/while</strong>. Note que em alguns deles há o uso de um&nbsp;
+            <strong>iterador</strong>, que é atualizado a cada execução do bloco. No caso&nbsp;
+            <strong>while(true)</strong> o código é executado indeterminadamente (condição sempre é verdadeira) e sai
+            da repetição através de uma condição em <strong>if</strong> e o operador <strong>break.</strong>
+            <H3>Iteradores declarativos</H3>
+            JS implementa, para valores do tipo <strong>Array</strong>,&nbsp;
+            <a href="https://medium.com/opensanca/imperativo-ou-declarativo-3e6dffbf301c">funções declarativas</a> que
+            permitem percorrer laços sem a necessidade de especificar um domínio de valores. É o caso dos laços&nbsp;
+            <strong>for/in e for/of:</strong>
+            <ul>
+              <li>
+                Não há a necessidade de especificar valores inicial e final para iterar
+              </li>
+              <li>
+                <strong>Em for/in,</strong> a variável iteradora assume o <strong>índice</strong> atual
+                (posição no Array)
+              </li>
+              <li>
+                <strong>Em for/of,</strong> a variável iteradora assume o <strong>valor</strong> da posição atual
+              </li>
+            </ul>
+            <H3>Programação funcional</H3>
+            A partir do <strong>ES6</strong>, foram implementadas funções baseadas em&nbsp;
+            <a href="https://tableless.com.br/entendendo-programacao-funcional-em-javascript/">
+              programação funcional
+            </a>.
+            No capítulo <a href="/4-advanced">4. Avançado</a>, há uma explicação detalhada sobre como eles funcionam e
+            facilitam muitos fluxos recursivos.
+            <br /><br />
+            <strong>
+              A estrutura &quot;for&quot; com iterador explícito (primeiro exemplo) caiu em desuso e é considerado
+              antipadrão em algumas configurações do <a href="https://eslint.org/">ESLint</a>.
+            </strong>
+          </CodeComment>
+          <CodeFrame
+            title="basics/7_loops.js"
+            width="100%"
+            height="auto"
+            src="//jsfiddle.net/santiagogustavo/co9wj8sf/embedded/js,result/dark/"
+            frameBorder="0"
+          />
+        </CodeArea>
+      </Accordion>
+      <Accordion title="2.8. Funções">
+        <CodeArea>
+          <CodeComment>
+            Funções definem blocos de código que são <strong>chamados e executados</strong> em qualquer ponto da
+            aplicação. As funções podem <strong>receber parâmetros</strong> e <strong>retornar valores</strong> de
+            quaisquer tipos de dados. <strong>É possível até receber e retornar outras funções!</strong>
+            <ul>
+              <li>
+                Os valores de retornos podem ser <strong>armazenados em variáveis</strong> ou&nbsp;
+                <strong>usados em expressões</strong>. As funções são <strong>executadas</strong> e retornam
+                seus valores <strong>antes</strong> que qualquer operação ou expressão seja calculada, como pode ser
+                visto ao usar <strong>console.log()</strong> no exemplo
+              </li>
+              <li>
+                Passar <strong>objetos como parâmetro</strong> é uma boa prática para simplificar e flexibilizar os
+                dados necessários para executar uma função
+              </li>
+              <li>
+                Funções <strong>anônimas</strong> podem ser definidas, armazenadas e executadas através de variáveis,
+                como uma forma de&nbsp;
+                <a href="https://medium.com/@ahlechandre/lambda-calculus-com-javascript-5db88c3b45a">
+                  expressão lambda
+                </a>
+              </li>
+            </ul>
+          </CodeComment>
+          <CodeFrame
+            title="basics/8_functions.js"
+            width="100%"
+            height="auto"
+            src="//jsfiddle.net/santiagogustavo/4nfg9qcz/2/embedded/js,result/dark/"
+            frameBorder="0"
+          />
+        </CodeArea>
+      </Accordion>
     </Content>
   </Fragment>
 );

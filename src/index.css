@@ -4,6 +4,7 @@ body {
   font-family: Roboto, sans-serif;
   color: #717171;
   background: #fafafa;
+  line-height: 1.4em;
 }
 
 a {
@@ -15,5 +16,5 @@ a {
 a:hover { color: #e3c22f; }
 
 li + li {
-  margin-top: 15px;
+  margin-top: 1em;
 }
