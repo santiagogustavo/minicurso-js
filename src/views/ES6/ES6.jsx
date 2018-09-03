@@ -115,13 +115,26 @@ const ES6 = () => (
       <Accordion title="3.3. Arrow functions">
         <CodeArea>
           <CodeComment>
-            3.3. Arrow functions
+            Aqui está um exemplo de simplificação de sintaxe. As funções &quot;seta&quot;&nbsp;
+            <strong>(arrow functions)</strong> são a evolução das funções convencionais:&nbsp;
+            <strong>nativamente anônimas</strong> (o nome é definido pela variável que a armazena) e com&nbsp;
+            <strong>retorno direto</strong>, eliminando a necessidade da sintaxe <strong>return</strong> quando ela
+            é redundante.
+            <br /><br />
+            <strong>
+              Lembra do&nbsp;
+              <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Function/bind">
+                bind
+              </a>?
+            </strong>&nbsp;
+            Ele é feito automaticamente para o <strong>contexto onde a arrow foi declarada!</strong> Esse detalhe é
+            muito útil para a definição de <strong>classes e polimorfismo</strong>, que serão explicados adiante.
           </CodeComment>
           <CodeFrame
-            title="basics/1_hello.js"
+            title="es6/3_arrows.js"
             width="100%"
             height="auto"
-            src="//jsfiddle.net/santiagogustavo/b1an8Lf7/2/embedded/js,result/dark/"
+            src="//jsfiddle.net/santiagogustavo/qzbcp3Lh/1/embedded/js,result/dark/"
             frameBorder="0"
           />
         </CodeArea>
