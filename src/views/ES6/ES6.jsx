@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import {
   H1,
+  H3,
   Content,
   InfoText,
   CodeArea,
@@ -51,13 +52,28 @@ const ES6 = () => (
       <Accordion title="3.1. Declaração e escopo de variáveis">
         <CodeArea>
           <CodeComment>
-            3.1. Declaração e escopo de variáveis
+            Novos tipos de variáveis foram introduzidos no ES6: <strong>const e let</strong>.
+            Elas operam de maneira similar às <strong>vars</strong> em declaração e associação de valores, com a
+            diferença fundamental de que elas obedecem ao <strong>escopo de bloco</strong>.&nbsp;
+            <br /><br />
+            <strong>
+              &quot;Consts&quot; recebem apenas um valor inicial e não podem ser reatribuídas como as &quot;lets&quot;.
+              No entanto, se um objeto for &quot;const&quot; ele pode ter suas propriedades modificadas normalmente!
+            </strong>
+            <H3>Escopo de bloco</H3>
+            Variáveis do tipo <strong>const e let</strong> obedecem, além dos escopos &quot;normais&quot; de função,
+            escopos definidos por blocos. Isso significa que variáveis desses tipos definidas em&nbsp;
+            <strong>condições, laços e blocos explícitos (definidos entre {'{ }'})</strong>
+            &nbsp;são encapsuladas e só podem ser acessadas <strong>dentro</strong> dessas estruturas.
+            Por conta desse detalhe, elas <strong>evitam o instanciamento indevido causado pelo hoisting!</strong>
+            <br /><br />
+            <strong>Note que os blocos não definem contexto, apenas reservam um espaço para variáveis locais!</strong>
           </CodeComment>
           <CodeFrame
-            title="basics/1_hello.js"
+            title="es6/1_variables.js"
             width="100%"
             height="auto"
-            src="//jsfiddle.net/santiagogustavo/b1an8Lf7/2/embedded/js,result/dark/"
+            src="//jsfiddle.net/santiagogustavo/dnbxcur8/embedded/js,result/dark/"
             frameBorder="0"
           />
         </CodeArea>
