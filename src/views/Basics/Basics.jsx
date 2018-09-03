@@ -9,6 +9,7 @@ import {
   CodeFrame,
 } from 'components/styles';
 import Accordion from 'components/Accordion';
+import { NavLinks, NextLink, PrevLink } from 'components/Links';
 
 const Basics = () => (
   <Fragment>
@@ -309,6 +310,38 @@ const Basics = () => (
           />
         </CodeArea>
       </Accordion>
+      <Accordion title="2.9. Escopo e hoisting">
+        <CodeArea>
+          <CodeComment>
+            SCOPO
+          </CodeComment>
+          <CodeFrame
+            title="basics/9_scope.js"
+            width="100%"
+            height="auto"
+            src="//jsfiddle.net/santiagogustavo/16qd5nsw/embedded/js,result/dark/"
+            frameBorder="0"
+          />
+        </CodeArea>
+      </Accordion>
+      <Accordion title="2.10. Manipulação do DOM">
+        <CodeArea>
+          <CodeComment>
+            DOM
+          </CodeComment>
+          <CodeFrame
+            title="basics/10_dom.js"
+            width="100%"
+            height="auto"
+            src="//jsfiddle.net/santiagogustavo/qpakmz0c/3/embedded/js,html,result/dark/"
+            frameBorder="0"
+          />
+        </CodeArea>
+      </Accordion>
+      <NavLinks>
+        <PrevLink to="/1-wtf-is-js">1. WTF is JS</PrevLink>
+        <NextLink to="/3-es6">3. ES6</NextLink>
+      </NavLinks>
     </Content>
   </Fragment>
 );

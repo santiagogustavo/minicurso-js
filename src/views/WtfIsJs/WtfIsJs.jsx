@@ -5,6 +5,7 @@ import {
   Content,
   InfoText,
 } from 'components/styles';
+import { NavLinks, NextLink } from 'components/Links';
 
 const WtfIsJs = () => (
   <Fragment>
@@ -19,6 +20,9 @@ const WtfIsJs = () => (
       <H2>Aplicações</H2>
       <H2>Vanilla X Frameworks</H2>
       <H2>Node? React? Redux?</H2>
+      <NavLinks>
+        <NextLink to="/2-basics">2. Básico</NextLink>
+      </NavLinks>
     </Content>
   </Fragment>
 );

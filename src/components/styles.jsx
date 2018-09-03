@@ -56,3 +56,10 @@ export const CodeFrame = styled.iframe`
   flex: 1;
   border-radius: 10px;
 `;
+
+export const Chevron = styled.div`
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+  height: 10px;
+  width: 10px;
+`;
