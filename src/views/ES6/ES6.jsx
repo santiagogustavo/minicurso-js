@@ -81,13 +81,33 @@ const ES6 = () => (
       <Accordion title="3.2. Parâmetros default e rest">
         <CodeArea>
           <CodeComment>
-            3.2. Parâmetros default e rest
+            Novidades para a declaração de funções foram especificadas, trazendo a possibilidade de definir&nbsp;
+            <strong>valores-padrão e parâmetros de &quot;lastro&quot; (rest)</strong>.
+            <ul>
+              <li>
+                <strong>Valores-padrão</strong> são utilizados para atribuir valores à parâmetros quando eles não são
+                definidos ao chamar uma função
+              </li>
+              <li>
+                <strong>Parâmetros rest</strong> definem valores passados indefinidamente, são tratados como objetos
+                ou Arrays pela função
+              </li>
+            </ul>
+            Os parâmetros <strong>rest</strong> são bem úteis quando há <strong>parâmetros opcionais</strong> ou se
+            deseja passar <strong>um número indeterminado ou grande de parâmetros</strong>.
+            <br /><br />
+            <strong>
+              Eles são diferentes dos parâmetros&nbsp;
+              <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/rest_parameters">
+                arguments
+              </a>!
+            </strong>
           </CodeComment>
           <CodeFrame
-            title="basics/1_hello.js"
+            title="es6/2_params.js"
             width="100%"
             height="auto"
-            src="//jsfiddle.net/santiagogustavo/b1an8Lf7/2/embedded/js,result/dark/"
+            src="//jsfiddle.net/santiagogustavo/987u2oak/embedded/js,result/dark/"
             frameBorder="0"
           />
         </CodeArea>
