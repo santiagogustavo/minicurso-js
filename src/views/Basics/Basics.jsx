@@ -7,6 +7,7 @@ import {
   CodeArea,
   CodeComment,
   CodeFrame,
+  CentralizedImg,
 } from 'components/styles';
 import Accordion from 'components/Accordion';
 import { NavLinks, NextLink, PrevLink } from 'components/Links';
@@ -16,9 +17,9 @@ const Basics = () => (
     <H1>2. Básico</H1>
     <Content>
       <InfoText>
-        Os códigos começam por aqui! Nesse capítulo, mostro conceitos básicos e fundamentais ao JavaScript. Note que
-        os exemplos estão no padrão &quot;antigo&quot; <strong>(pré-ES6)</strong>, as diferenças serão explicadas
-        depois. Para aqueles que não estão familiarizados, a linguagem passou por&nbsp;
+        <strong>Os códigos começam por aqui!</strong> Nesse capítulo, mostro conceitos básicos e fundamentos do
+        JavaScript. Note que os exemplos estão no padrão &quot;antigo&quot; <strong>(pré-ES6)</strong>, as diferenças
+        serão explicadas depois. Para aqueles que não estão familiarizados, a linguagem passou por&nbsp;
         <strong>evoluções técnicas e sintáticas</strong> que flexibilizaram e limitaram problemas que eram causados por
         diferenças semânticas entre JS e outras linguagens de programação.
         <br /><br />
@@ -26,7 +27,21 @@ const Basics = () => (
         <strong>operações, atribuições, tipos de dados, estruturas e características de interpretação</strong>&nbsp;
         que são essenciais para entender o funcionamento e o comportamento dos códigos. Aproveitei para enfatizar,
         também, alguns pontos que são considerados <strong>legado ou antipadrão</strong>, e como eles são contornados
-        pelo ES6 em diante.
+        pelo ES6 em diante.&nbsp;
+        <strong>
+          É importante que se tenha um conhecimento mínimo de lógica de programação para acompanhar as explicações!
+        </strong>&nbsp;
+        Em pontos onde há termos não tão comuns eu deixei links complementares para ajudar os estudos :)
+        <br /><br />
+        <strong>Vamos nessa!</strong>
+        <CentralizedImg
+          alt="programming"
+          src="https://media.giphy.com/media/wpBCnSSBCbh3q/giphy.gif"
+          style={{
+            marginTop: '1em',
+            height: 200,
+          }}
+        />
       </InfoText>
       <Accordion title="2.1. Hello World">
         <CodeArea>
