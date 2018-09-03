@@ -142,13 +142,23 @@ const ES6 = () => (
       <Accordion title="3.4. Destructuring">
         <CodeArea>
           <CodeComment>
-            3.4. Destructuring
+            Mais um exemplo de simplificação de sintaxe: o <strong>destructuring recupera e mapeia</strong> atributos de
+            um objeto ou índices de um Array em <strong>variáveis const ou let</strong>. Ao fazer isso,&nbsp;
+            <strong>elimina-se a atribuição redundante</strong> de recuperar valores e associá-los um a um em variáveis,
+            reduzindo consideravelmente o tamanho do código.
+            <br /><br />
+            Note que qualquer modificação no objeto/Array original <strong>não</strong> atualiza os valores das
+            variáveis. <strong>O inverso se aplica para modificações em variáveis!</strong>
+            <br /><br />
+            <strong>
+              Essa sintaxe pode ser combinada com parâmetros rest e simplificar muito seu código!
+            </strong>
           </CodeComment>
           <CodeFrame
-            title="basics/1_hello.js"
+            title="es6/4_destructuring.js"
             width="100%"
             height="auto"
-            src="//jsfiddle.net/santiagogustavo/b1an8Lf7/2/embedded/js,result/dark/"
+            src="//jsfiddle.net/santiagogustavo/udhof8tb/embedded/js,result/dark/"
             frameBorder="0"
           />
         </CodeArea>
