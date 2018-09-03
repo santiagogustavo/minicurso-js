@@ -313,7 +313,75 @@ const Basics = () => (
       <Accordion title="2.9. Escopo e hoisting">
         <CodeArea>
           <CodeComment>
-            SCOPO
+            Este é um dos pontos mais interessantes e complexos da linguagem. Por definição, variáveis possuem um&nbsp;
+            <strong>escopo</strong>, algo que pode ser explicado como sua <strong>localização relativa</strong> no
+            código. Existem dois tipos de escopo:
+            <ul>
+              <li>
+                <strong>Global:</strong> &quot;raiz&quot; do código, escopo mais externo e final
+              </li>
+              <li>
+                <strong>Local:</strong> definido por funções <strong>(usando var)</strong> ou por blocos de código&nbsp;
+                <strong>(em ES6)</strong>, podem ser aninhados
+              </li>
+            </ul>
+            <H3>Hoisting</H3>
+            Traduzindo literalmente:
+            <br /><br />
+            <strong>&ensp;&ensp;&ensp;&ensp;to hoist {'{v.}'}:</strong> içar, alçar
+            <br /><br />
+            Traduzindo em termos técnicos, é uma característica <strong>muito importante</strong> do Javascript: as
+            variáveis declaradas no código são <strong>&quot;jogadas para cima&quot;</strong>, como se tivessem sido
+            declaradas no topo de cada escopo.
+            <br /><br />
+            Esse processo é feito devido a um mecanismo de procura pelas variáveis sempre que elas são referenciadas
+            em expressões. Chamado de <strong>Go-Fish</strong>, ele funciona da seguinte forma:
+            <ul>
+              <li>
+                Variável referenciada é <strong>procurada no escopo atual</strong>
+              </li>
+              <li>
+                <strong>Se encontrou,</strong> a variável é recuperada e utilizada sem problemas
+              </li>
+              <li>
+                <strong>Se não encontrou,</strong> existem dois cenários:
+              </li>
+              <ul>
+                <li>
+                  <strong>Se o escopo atual é local,</strong> a busca continua e prossegue da mesma forma
+                </li>
+                <li>
+                  <strong>Se o escopo atual é o global e a variável não foi encontrada,</strong> ela é então declarada e
+                  inicializada sem valor <strong>(undefined)</strong>
+                </li>
+              </ul>
+            </ul>
+            Note que é possível <strong>redefinir e mascarar variáveis de mesmo nome</strong> ao defini-las novamente
+            em um escopo mais &quot;interno&quot;. Essa prática é chamada de <strong>shadowing</strong> e&nbsp;
+            <strong>deve ser usada com muito cuidado.</strong>
+            <H3>Contexto e binding</H3>
+            Até agora, foi falado sobre <strong>escopos locais e globais</strong> relativos a organização do código.
+            Por padrão, o <strong>contexto</strong> para as funções é definido automaticamente como o escopo de
+            maior precedência <strong>(pode ser o global ou o local imediatamente após o atual)</strong>.
+            Podemos ir além e definir <strong>&quot;contextos manuais&quot;</strong>, aonde funções podem obedecer
+            escopos além do definido originalmente.
+            <br /><br />
+            Essa mudança de contexto é chamada de <strong>binding</strong>, e é muito utilizada em&nbsp;
+            <strong>orientação a objetos e funções executadas em diferentes pontos de uma aplicação.</strong>
+            <H3>Strict Mode</H3>
+            No ES5, foi criado o <strong>Strict Mode</strong>, responsável por&nbsp;
+            <strong>
+              impor limitações sintáticas e exibir erros que normalmente seriam ignorados e corrigidos
+              pelo interpretador.&nbsp;
+            </strong>
+            Conforme visto no <strong>Go-Fish</strong>, se uma variável referenciada não é encontrada, ela é então
+            &quot;criada&quot; pelo interpretador e recebe o valor <strong>undefined</strong>.&nbsp;
+            O Strict Mode é comumente usado para &quot;cancelar&quot; esse procedimento,
+            retornando erros de variáveis indefinidas.
+            <br /><br />
+            Devido a problemas de compatibilidade e limitações técnicas, esse modo é considerado&nbsp;
+            <strong>antipadrão e deve ser evitado</strong>. Em versões posteriores do ES, foram adicionadas&nbsp;
+            <strong>novas estruturas e sintaxes</strong> que se comportam de maneira similar a esse modo.
           </CodeComment>
           <CodeFrame
             title="basics/9_scope.js"
