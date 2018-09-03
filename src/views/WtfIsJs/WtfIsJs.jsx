@@ -9,7 +9,7 @@ import { NavLinks, NextLink } from 'components/Links';
 
 const WtfIsJs = () => (
   <Fragment>
-    <H1>1. <span>WTF is JS</span></H1>
+    <H1>1. WTF is JS</H1>
     <Content>
       <InfoText>
         Este é o capítulo inicial do minicurso de JavaScript, abordei a seguir algumas informações e curiosidades sobre

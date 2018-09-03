@@ -13,7 +13,7 @@ import { NavLinks, NextLink, PrevLink } from 'components/Links';
 
 const Basics = () => (
   <Fragment>
-    <H1>2. <span>Básico</span></H1>
+    <H1>2. Básico</H1>
     <Content>
       <InfoText>
         Os códigos começam por aqui! Nesse capítulo, mostro conceitos básicos e fundamentais ao JavaScript. Note que
@@ -28,7 +28,7 @@ const Basics = () => (
         também, alguns pontos que são considerados <strong>legado ou antipadrão</strong>, e como eles são contornados
         pelo ES6 em diante.
       </InfoText>
-      <Accordion title="2.1 Hello World">
+      <Accordion title="2.1. Hello World">
         <CodeArea>
           <CodeComment>
             Reza a lenda que se você aprender uma linguagem sem fazer um <strong>&quot;Hello World!&quot;</strong> uma
@@ -44,7 +44,7 @@ const Basics = () => (
           />
         </CodeArea>
       </Accordion>
-      <Accordion title="2.2 Operadores">
+      <Accordion title="2.2. Operadores">
         <CodeArea>
           <CodeComment>
             As operações <strong>algébricas e booleanas</strong> funcionam como esperado (e com sintaxe muito familiar).

@@ -63,3 +63,9 @@ export const Chevron = styled.div`
   height: 10px;
   width: 10px;
 `;
+
+export const CentralizedImg = styled.img`
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+`;
