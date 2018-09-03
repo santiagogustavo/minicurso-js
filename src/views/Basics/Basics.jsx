@@ -395,7 +395,29 @@ const Basics = () => (
       <Accordion title="2.10. Manipulação do DOM">
         <CodeArea>
           <CodeComment>
-            DOM
+            Talvez a principal funcionalidade, aquela que motivou até mesmo a criação da linguagem, é a&nbsp;
+            <strong>manipulação de elementos renderizados no DOM (Document Object Model)</strong>. É possível editar
+            praticamente <strong>todos</strong> os atributos de uma página HTML e seus elementos, através do objeto
+            global <strong>document</strong>.
+            <br /><br />
+            O uso mais comum é o de <strong>recuperar e modificar</strong> estilos e conteúdos de determinados
+            elementos, utilizando&nbsp;
+            <strong>
+              id, classe ou até mesmo&nbsp;
+              <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors">
+                seletores CSS
+              </a>
+            </strong>.&nbsp;
+            Há, também, suporte para&nbsp;
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Element/addEventListener">
+              event listeners
+            </a>&nbsp;
+            e interação com os objetos <strong>window, location e history</strong>.
+            <br /><br />
+            Em frameworks como <a href="https://reactjs.org/">React</a> e <a href="https://vuejs.org/">Vue</a> a
+            organização dos elementos é definida pelo próprio código Javascript. Eles são inseridos na página&nbsp;
+            <strong>durante a execução</strong> do script através de um&nbsp;
+            <a href="http://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/">Virtual DOM</a>.
           </CodeComment>
           <CodeFrame
             title="basics/10_dom.js"
