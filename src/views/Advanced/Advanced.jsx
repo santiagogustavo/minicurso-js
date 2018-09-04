@@ -144,7 +144,37 @@ const Advanced = () => (
       <Accordion title="4.4. forEach(), map(), filter() e reduce()">
         <CodeArea>
           <CodeComment>
-            ASDF
+            Aproveitando ao máximo a&nbsp;
+            <a href="https://medium.com/opensanca/imperativo-ou-declarativo-3e6dffbf301c">programação declarativa</a>,
+            foram definidos novos mecanismos para trabalhar com <strong>Arrays e objetos</strong>. As funções&nbsp;
+            <strong>forEach(), map(), filter() e reduce()</strong> vieram para&nbsp;
+            <strong>simplificar e otimizar</strong> operações frequentes.
+            <br /><br />
+            Em todas, o <a href="https://pt.wikipedia.org/wiki/Modus_operandi">modus operandi</a> é o mesmo: um&nbsp;
+            <strong>iterador declarativo</strong> assume os valores de elementos em uma lista.
+            <ul>
+              <li>
+                <strong>forEach():</strong> intuitivamente itera sobre <strong>todos os elementos</strong>, um a um.
+                Seu funcionamento é <strong>idêntico</strong> ao laço <strong>for-of</strong>;
+              </li>
+              <li>
+                <strong>map():</strong> permite aplicar transformações em <strong>todos os elementos</strong>. Pode ser
+                utilizado para <strong>inserir, remover ou selecionar atributos</strong> em alguns casos;
+              </li>
+              <li>
+                <strong>filter():</strong> recupera elementos de acordo com o resultado de uma função. É a forma
+                mais <strong>simples e não-recursiva</strong> de gerar novos Arrays condicionalmente!
+              </li>
+              <li>
+                <strong>reduce():</strong> itera sobre <strong>todos os elementos</strong> e mantém um resultado
+                através de um acumulador. Pode receber um <strong>valor inicial</strong> e percorrer&nbsp;
+                <strong>objetos.</strong>
+              </li>
+            </ul>
+            <strong>
+              forEach(), apesar de sua simplicidade, é considerado antipadrão por alguns frameworks.
+              Mas não tem problema: map() tem a mesma funcionalidade se os elementos não forem modificados!
+            </strong>
           </CodeComment>
           <CodeFrame
             title="advanced/4_iterators.js"
