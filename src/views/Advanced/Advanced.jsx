@@ -27,8 +27,8 @@ const Advanced = () => (
         </strong>&nbsp;
         que muitas vezes ajudam a implementar códigos mais legíveis e eficientes. Muito do que é passado aqui depende
         das mudanças feitas no <strong>ES6</strong> e serve como leitura complementar deste capítulo. Como lembrete, a
-        compatibilidade dos métodos passados aqui <strong>ainda é pequena</strong>, é extremamente recomendado usar
-        um <strong>compilador</strong> se for usá-los em algum código de produção!
+        compatibilidade dos métodos passados aqui <strong>ainda é pequena</strong>, então é extremamente recomendado
+        usar um <strong>compilador</strong> se for usá-los em algum código de produção!
         <br /><br />
         Alguns tópicos citados aqui se tornaram <strong>padrão ou são muito utilizados</strong> em versões pós-ES6, dei
         uma ênfase maior neles! <strong>Novas funcionalidades</strong> foram implementadas sobre&nbsp;
@@ -101,7 +101,35 @@ const Advanced = () => (
       <Accordion title="4.3. Currying">
         <CodeArea>
           <CodeComment>
-            ASDF
+            Nomeada pelo seu criador, o matemático&nbsp;
+            <a href="https://en.wikipedia.org/wiki/Haskell_Curry">Haskell Curry</a>, essa técnica combinatória
+            envolve <strong>reduzir o número de argumentos (ordem)</strong> de uma função de acordo com seu uso e
+            valores que são comumente passados. É, também, uma forma de&nbsp;
+            <a href="https://pt.wikipedia.org/wiki/C%C3%A1lculo_lambda">cálculo lambda</a>, aonde as operações são
+            feitas <strong>implicitamente ou de forma encadeada</strong>.
+            <br /><br />
+            Uma visão matemática pode simplificar como esse processo funciona:
+            <ul>
+              <li>
+                Uma função <strong>f(x, y)</strong> será executada muitas vezes para um mesmo valor de&nbsp;
+                <strong>x</strong>
+              </li>
+              <li>
+                Faz sentido, então, gerar uma outra função <strong>g(y)</strong> que já recebe o valor de x
+                implicitamente
+              </li>
+              <li>
+                Então, podemos quebrar a função <strong>f(x, y)</strong> em <strong>f&apos;(x)(y)</strong> e
+                declarar <strong>g(y) = f(valor)(y)</strong>
+              </li>
+              <li>
+                <strong>Isso é currying!</strong>
+              </li>
+            </ul>
+            <strong>
+              Uma vez que uma função passou pelo processo de currying, é possível revertê-la ao seu &quot;estado&quot;
+              original, tornando essa uma estrutura muito flexível e utilizada em Javascript e outras linguagens!
+            </strong>
           </CodeComment>
           <CodeFrame
             title="advanced/3_currying.js"
