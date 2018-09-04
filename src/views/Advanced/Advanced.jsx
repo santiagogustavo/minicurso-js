@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import {
   H1,
+  H3,
   Content,
   InfoText,
   CodeArea,
@@ -157,7 +158,23 @@ const Advanced = () => (
       <Accordion title="4.5. Funções assíncronas">
         <CodeArea>
           <CodeComment>
-            ASDF
+            Aplicações <strong>&quot;do mundo real&quot;</strong> quase sempre ocorrem de maneira&nbsp;
+            <strong>assíncrona</strong>, onde o tempo de chamada ou resposta&nbsp;
+            <strong>não é instantâneo ou previsível</strong>. Seja uma requisição a um servidor ou até uma interação do
+            usuário numa interface, é necessario que a execução seja <strong>não-bloqueante</strong> e retorne ações
+            de <strong>sucesso ou erro</strong> através de&nbsp;
+            <a href="https://tableless.com.br/fluxo-de-execucao-assincrono-em-javascript-callbacks/">callbacks</a>.
+            <br /><br />
+            As funções <strong>setTimeout e setInterval</strong> são assíncronas do tipo <strong>timer</strong>, e
+            executam callbacks <strong>uma vez após um timeout ou repetidamente em um intervalo definido</strong>,
+            respectivamente. <strong>Elas são canceláveis!</strong>
+            <H3>Callback Hell</H3>
+            <strong>Aninhar várias funções</strong> é um erro muito comum quando se programa com fluxos assíncronos!
+            De fato, é intuitivo que o tratamento das respostas seja feito com&nbsp;
+            <strong>blocos e lógicas diferentes</strong>, mas se isso é feito progressivamente através de callbacks
+            temos o fenômeno do <a href="http://callbackhell.com/">Callback Hell</a>.
+            <br /><br />
+            <strong>Os principais sintomas são ilegibilidade de código e dificuldade na manutenção!</strong>
           </CodeComment>
           <CodeFrame
             title="advanced/5_asyncs.js"
