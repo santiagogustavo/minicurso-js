@@ -79,7 +79,15 @@ const Advanced = () => (
       <Accordion title="4.2. Closures">
         <CodeArea>
           <CodeComment>
-            ASDF
+            <strong>Closures (fechamento)</strong> são um mecanismo da linguagem utilizado para &quot;privatizar&quot;
+            atributos dentro de escopos locais. Devem ser utilizados quando se deseja que&nbsp;
+            <strong>variáveis, funções e objetos</strong> não sejam acessados fora de uma função ou objeto.
+            <br /><br />
+            Observe nos exemplos que os atributos modificados são&nbsp;
+            <strong>atualizados normalmente dentro do escopo</strong>, mas para obtê-los é necessário que&nbsp;
+            <strong>métodos &quot;públicos&quot; retornem seus valores</strong> explicitamente.
+            <br /><br />
+            <strong>Esse mecanismo deriva do conceito de encapsulamento na Orientação a Objetos!</strong>
           </CodeComment>
           <CodeFrame
             title="advanced/2_closures.js"
