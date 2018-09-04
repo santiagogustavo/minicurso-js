@@ -166,13 +166,37 @@ const ES6 = () => (
       <Accordion title="3.5. “Pseudo” Orientação a Objetos">
         <CodeArea>
           <CodeComment>
-            3.5. “Pseudo” Orientação a Objetos
+            O paradigma de&nbsp;
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript"
+            >
+              Programação Orientada a Objetos
+            </a>&nbsp;
+            foi especificado para a linguagem como forma
+            de trazer uma sintaxe <strong>simples e funcional</strong> para a abstração de&nbsp;
+            <strong>entidades em objetos.</strong> Com ele, é possível definir relações de&nbsp;
+            <strong>herança, encapsulamento, polimorfismo e modularidade</strong> entre objetos de maneira mais
+            intuitiva e funcional do que como era feito em versões anteriores.
+            <H3>Por que &quot;pseudo&quot;?</H3>
+            Ao contrário do que acontece em boa parte das linguagens orientadas a objeto&nbsp;
+            <strong>(como exemplo Java, Python e C#)</strong>, quando criamos um objeto de uma classe em Javascript
+            é feita uma <strong>referência ao objeto &quot;original&quot; da classe</strong>. Isso significa que
+            quando é feita uma atribuição do tipo <strong>new Classe()</strong> não criamos uma instância nova, e sim
+            uma referência!
+            <br /><br />
+            <strong>O mesmo comportamento acontece quando aplicamos polimorfismo!</strong> As classes herdadas fazem
+            referência à classe &quot;pai&quot;, e o <strong>Go-Fish (lembra dele?)</strong> é responsável por buscar
+            os valores e métodos entre os objetos das classes.
+            <H3>Getters/Setters</H3>
+            Além das operações usuais entre classes, o ES6 trouxe uma sintaxe que permite encapsular dados de forma
+            &quot;segura&quot;. Ao definir valores internos com <strong>this</strong>, funções do tipo&nbsp;
+            <strong>get ou set</strong> são responsáveis por <strong>recuperar ou atualizar</strong> atributos.
           </CodeComment>
           <CodeFrame
-            title="basics/1_hello.js"
+            title="es6/5_oop.js"
             width="100%"
             height="auto"
-            src="//jsfiddle.net/santiagogustavo/b1an8Lf7/2/embedded/js,result/dark/"
+            src="//jsfiddle.net/santiagogustavo/ydxwq8bj/embedded/js,result/dark/"
             frameBorder="0"
           />
         </CodeArea>
