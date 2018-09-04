@@ -204,13 +204,23 @@ const ES6 = () => (
       <Accordion title="3.6. Módulos">
         <CodeArea>
           <CodeComment>
-            3.6. Módulos
+            <strong>&quot;Módulos&quot;</strong> é o nome dado para&nbsp;
+            <strong>objetos, funções, variáveis e classes</strong> que são exportados e importados explicitamente
+            entre arquivos JS. Antes da sintaxe <strong>export/import</strong>, isso era comumente feito utilizando o
+            operador <strong>require()</strong> da API&nbsp;
+            <a href="https://nodejs.org/docs/latest/api/modules.html">CommonJS</a> ou outros frameworks que
+            implementavam essa ação.
+            <br /><br />
+            <strong>
+              No JSFiddle não é possível definir múltiplos arquivos, mas indico no código como deve ser a organização
+              dos arquivos!
+            </strong>
           </CodeComment>
           <CodeFrame
-            title="basics/1_hello.js"
+            title="es6/6_modules.js"
             width="100%"
             height="auto"
-            src="//jsfiddle.net/santiagogustavo/b1an8Lf7/2/embedded/js,result/dark/"
+            src="//jsfiddle.net/santiagogustavo/n9Lbuc07/8/embedded/js/dark/"
             frameBorder="0"
           />
         </CodeArea>
