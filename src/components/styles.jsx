@@ -55,6 +55,7 @@ export const CodeBlock = styled(SyntaxHighlighter)`
 export const CodeFrame = styled.iframe`
   flex: 1;
   border-radius: 10px;
+  overflow: hidden;
 `;
 
 export const Chevron = styled.div`

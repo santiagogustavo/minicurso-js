@@ -52,7 +52,20 @@ const Advanced = () => (
       <Accordion title="4.1. IIFE">
         <CodeArea>
           <CodeComment>
-            ASDF
+            <strong>Immediately Invoked Function Expression</strong>, ou simplesmente <strong>IIFE</strong>, é um
+            padrão de código que possui duas funcionalidades:
+            <ul>
+              <li>
+                Declarar uma função <strong>nomeada ou anônima</strong> no contexto local
+              </li>
+              <li>
+                <strong>Executá-la logo em seguida</strong>, removendo qualquer referência após sua execução
+              </li>
+            </ul>
+            Estruturas desse tipo são muito úteis quando se tem a necessidade de realizar operações num&nbsp;
+            <strong>escopo separado e temporário</strong>.
+            <br /><br />
+            <strong>IIFEs podem retornar valores normalmente!</strong>
           </CodeComment>
           <CodeFrame
             title="advanced/1_iife.js"
