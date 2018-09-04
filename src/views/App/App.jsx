@@ -10,6 +10,7 @@ import WtfIsJs from '../WtfIsJs';
 import Basics from '../Basics';
 import ES6 from '../ES6';
 import Advanced from '../Advanced';
+import Tools from '../Tools';
 
 const Page = styled.div`
   padding: 5% 15%;
@@ -25,6 +26,7 @@ const App = () => (
         <Route path="/2-basics" component={Basics} />
         <Route path="/3-es6" component={ES6} />
         <Route path="/4-advanced" component={Advanced} />
+        <Route path="/5-tools" component={Tools} />
       </Switch>
     </Page>
   </Fragment>

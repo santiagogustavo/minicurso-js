@@ -11,7 +11,7 @@ import {
 import Accordion from 'components/Accordion';
 import { NavLinks, NextLink, PrevLink } from 'components/Links';
 
-const WtfIsJs = () => (
+const Advanced = () => (
   <Fragment>
     <H1>4. Avançado</H1>
     <Content>
@@ -155,4 +155,4 @@ const WtfIsJs = () => (
   </Fragment>
 );
 
-export default WtfIsJs;
+export default Advanced;
