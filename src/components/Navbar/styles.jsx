@@ -95,7 +95,7 @@ export const ChapterLink = styled(Link)`
     transform: scale(1.05);
     background: #FDD835;
     color: #fafafa;
-    text-shadow: #212121 0 15px 40px;
+    text-shadow: #322b0a 0 3px 50px;
   }
   &:focus { outline: none; }
   &::-moz-focus-inner { outline: none; }  
