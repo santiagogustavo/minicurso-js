@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -18,22 +18,30 @@ const Page = styled.div`
   padding: 5% 15%;
 `;
 
-const App = () => (
-  <Fragment>
-    <Navbar />
-    <Page>
-      <Switch>
-        <Route exact path="/" component={Root} />
-        <Route path="/404" component={Route404} />
-        <Route path="/1-wtf-is-js" component={WtfIsJs} />
-        <Route path="/2-basics" component={Basics} />
-        <Route path="/3-es6" component={ES6} />
-        <Route path="/4-advanced" component={Advanced} />
-        <Route path="/5-tools" component={Tools} />
-        <Redirect to="/404" />
-      </Switch>
-    </Page>
-  </Fragment>
-);
+class App extends Component {
+  componentDidUpdate = () => window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  });
+
+  render = () => (
+    <Fragment>
+      <Navbar />
+      <Page>
+        <Switch>
+          <Route exact path="/" component={Root} />
+          <Route path="/404" component={Route404} />
+          <Route path="/1-wtf-is-js" component={WtfIsJs} />
+          <Route path="/2-basics" component={Basics} />
+          <Route path="/3-es6" component={ES6} />
+          <Route path="/4-advanced" component={Advanced} />
+          <Route path="/5-tools" component={Tools} />
+          <Redirect to="/404" />
+        </Switch>
+      </Page>
+    </Fragment>
+  );
+}
 
 export default App;

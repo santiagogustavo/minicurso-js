@@ -18,12 +18,18 @@ const WtfIsJs = () => (
       </InfoText>
       <Accordion title="1.1. Origem">
         1.1. Origem
+        <H3>Protótipo</H3>
+        <H3>Não é Java!</H3>
       </Accordion>
       <Accordion title="1.2. Evolução">
         1.2. Evolução
+        <H3>ECMAScript</H3>
+        <H3>Multiparadigma</H3>
       </Accordion>
       <Accordion title="1.3. Aplicações">
         1.3. Aplicações
+        <H3>Client-side</H3>
+        <H3>Server-side</H3>
       </Accordion>
       <Accordion title="1.4. Vanilla X Frameworks">
         1.4. Vanilla X Frameworks
