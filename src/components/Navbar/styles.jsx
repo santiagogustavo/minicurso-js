@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
+import GitLogoRaw from 'components/GitLogo';
 
 export const Shine = keyframes`
   0% { transform: skewX(-15deg) translateX(0); }
@@ -55,6 +56,13 @@ export const LinkLogo = styled(Link)`
   }
 `;
 
+export const GitLogo = styled(GitLogoRaw)`
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  fill: #e4e4e4;
+`;
+
 export const LogoText = styled.div`
   display: flex;
   flex-direction: column;
@@ -69,13 +77,14 @@ export const LogoText = styled.div`
     font-weight: 400;
     display: flex;
     align-items: center;
+    margin-top: 10px;
+    &:hover {
+      color: #fafafa;
+      & > ${GitLogo} { fill: #fafafa; }
+    }
+    &:focus { outline: none; }
+    &::-moz-focus-inner { outline: none; }
   }
-`;
-
-export const GitLogo = styled.img`
-  height: 20px;
-  width: 20px;
-  margin-right: 5px;
 `;
 
 export const Chapters = styled.div`

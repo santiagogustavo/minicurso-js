@@ -1,7 +1,6 @@
 import React from 'react';
 
 import SvgLogo from 'assets/imgs/js.png';
-import SvgGit from 'assets/imgs/github.svg';
 import {
   Container,
   Header,
@@ -22,7 +21,7 @@ const Navbar = () => (
       <LogoText>
         minicurso-js
         <a href="https://github.com/santiagogustavo">
-          <GitLogo src={SvgGit} />
+          <GitLogo />
           @santiagogustavo
         </a>
       </LogoText>
