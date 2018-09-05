@@ -38,7 +38,11 @@ const Advanced = () => (
           <a href="https://medium.com/front-end-hacking/javascript-whats-new-in-ecmascript-2018-es2018-17ede97f36d5">
             ES2018
           </a> (de fato já existe até o <a href="https://tc39.github.io/ecma262/">ES2019</a>!)
-        </strong>, mas não cobri elas aqui devido a falta de suporte e uso.
+        </strong>, mas não cobri elas aqui devido a falta de suporte e uso.&nbsp;
+        <strong>Para futuras leituras e aprofundamentos</strong> recomendo fortemente
+        o manual da <a href="https://developer.mozilla.org/pt-BR/">MDN</a> (atualizado sempre com as novas convenções e
+        tabelas de compatibilidade) e o <a href="http://frontendweekly.co/">Frontend Weekly</a> (muitas técnicas e
+        soluções interessantes para problemas).
         <br /><br />
         <strong>Vamos nessa!</strong>
         <CentralizedImg
