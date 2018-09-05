@@ -218,11 +218,37 @@ const Advanced = () => (
       <Accordion title="4.6. Promises">
         <CodeArea>
           <CodeComment>
-            Estrutura que simplifica a sintaxe de funções assíncronas e permite lidar com fluxos de sucesso/erro com
-            mais segurança. Também lida diretamente com callback hell.
-            Estados: pendente, resolvida e rejeitada.
+            Promises permitem <strong>declarar e operar</strong> funções assíncronas de maneira muito mais&nbsp;
+            <strong>simples e organizada.</strong> O fluxo é <strong>dividido em três estados:</strong>
+            <ul>
+              <li>
+                <strong>Pendente:</strong> a Promise foi declarada e está <strong>pronta para ser executada.</strong>
+                &nbsp;Nesse ponto, a função foi chamada normalmente e <strong>ainda não temos o seu resultado!</strong>
+              </li>
+              <li>
+                <strong>Resolvida:</strong> a operação foi completada com <strong>sucesso</strong> e poderá continuar
+                seu fluxo normalmente. Um callback, definido em <strong>then()</strong>, é&nbsp;
+                <strong>&quot;então&quot;</strong> executado;
+              </li>
+              <li>
+                <strong>Rejeitada:</strong> houve algum <strong>erro</strong> nos parâmetros passados ou na execução.
+                Um callback, definido em <strong>catch()</strong>, é <strong>&quot;pego&quot;</strong> e deverá lidar
+                com a falha;
+              </li>
+            </ul>
             <H3>async/await</H3>
-            Syntax sugar para promises. Permite aninhar promises sem problemas de execução ou ruídos de sintaxe.
+            <strong>Talvez a nomenclatura mais intuitiva do Javascript!</strong>&nbsp;
+            <br /><br />
+            <a href="https://en.wikipedia.org/wiki/Syntactic_sugar">Syntax sugar</a> para Promises, os operadores&nbsp;
+            <strong>async/await</strong> declaram que uma determinada função é <strong>assíncrona</strong> e que
+            irá <strong>esperar</strong> a execução de outras funções assíncronas.
+            Seu funcionamento é idêntico ao de uma Promise, com fluxos <strong>then() e catch()</strong> para&nbsp;
+            <strong>sucesso ou falha</strong>, respectivamente.
+            <br /><br />
+            <strong>
+              Fundamentalmente permite aninhar Promises sem problemas de execução ou ruídos de sintaxe, lidando
+              diretamente com o Callback Hell!
+            </strong>
           </CodeComment>
           <CodeFrame
             title="advanced/6_promises.js"
