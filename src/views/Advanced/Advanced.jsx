@@ -218,7 +218,11 @@ const Advanced = () => (
       <Accordion title="4.6. Promises">
         <CodeArea>
           <CodeComment>
-            ASDF
+            Estrutura que simplifica a sintaxe de funções assíncronas e permite lidar com fluxos de sucesso/erro com
+            mais segurança. Também lida diretamente com callback hell.
+            Estados: pendente, resolvida e rejeitada.
+            <H3>async/await</H3>
+            Syntax sugar para promises. Permite aninhar promises sem problemas de execução ou ruídos de sintaxe.
           </CodeComment>
           <CodeFrame
             title="advanced/6_promises.js"
@@ -232,7 +236,39 @@ const Advanced = () => (
       <Accordion title="4.7. Generators">
         <CodeArea>
           <CodeComment>
-            ASDF
+            <strong>Híbrido entre funções assíncronas e síncronas</strong>, as&nbsp;
+            <strong>Generators (function *)</strong> são funções controladas através de um <strong>iterador</strong>.
+            Em termos não-técnicos, são blocos de código que possuem a&nbsp;
+            <strong>execução &quot;em blocos&quot;</strong> e é possível determinar quando o próximo bloco será
+            executado (e o que ele fará).
+            <br /><br />
+            Podem <strong>receber e retornar valores</strong> em qualquer ponto da execução. O ponteiro da iteração
+            deve ser armazenado numa <strong>variável</strong>, o fluxo prossegue&nbsp;
+            <strong>linearmente e é irreversível.</strong>
+            <br /><br />
+            <strong>Não pode ser usado com arrow functions!</strong>
+            <H3>yield ou return?</H3>
+            Embora ambos operadores sejam responsáveis por <strong>retornar valores</strong>, eles são&nbsp;
+            <strong>semanticamente</strong> diferentes:
+            <ul>
+              <li>
+                <strong>yield:</strong> retorna valores numa determinada iteração <strong>next()</strong> de uma
+                generator. Ao fazer isso, todo o código que vem <strong>depois</strong> de um yield é executado numa
+                próxima iteração, <strong>continuando o fluxo</strong>;
+              </li>
+              <li>
+                <strong>return:</strong> retorna um valor <strong>final</strong> e não permite executar mais nada
+                após sua execução. Pode ser usado <strong>junto com yields</strong> numa generator para finalizar suas
+                iterações!
+              </li>
+            </ul>
+            <strong>
+              É possível passar novos valores para cada iteração next() através de valores em yield. Essa prática é um
+              tanto confusa e requer uma&nbsp;
+              <a href="https://codeburst.io/what-are-javascript-generators-and-how-to-use-them-c6f2713fd12e">
+                compreensão melhor
+              </a> de como as Generators funcionam!
+            </strong>
           </CodeComment>
           <CodeFrame
             title="advanced/7_generators.js"
