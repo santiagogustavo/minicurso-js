@@ -38,9 +38,16 @@ const Tools = () => (
       </Accordion>
       <Accordion title="5.2. NPM">
         <CodeArea>
-          <CodeComment>
-            5.2. NPM
-            <H3>Yarn</H3>
+          <CodeComment style={{ paddingBottom: 0 }}>
+            <strong>Node Package Manager (ou simplesmente <a href="https://www.npmjs.com/">NPM</a>)</strong>, como o
+            próprio nome sugere, é um gerenciador de pacotes Javascript baseado no <strong>Node</strong>. É responsável
+            por armazenar <strong>metadados</strong> sobre projetos, publicar em <strong>repositórios online</strong>
+            &nbsp;e gerenciar <strong>dependências</strong>.
+            <br /><br />
+            É muito utilizado por <strong>bibliotecas e frameworks</strong> por ser uma plataforma simples de se manter
+            e possuir um <strong>portal de buscas</strong>. Permite, também, a definição de <strong>scripts</strong>
+            &nbsp;pré-definidos, facilitando muito o processo de <strong>desenvolvimento e build</strong> de projetos
+            mais elaborados.
           </CodeComment>
           <CodeComment>
             <CentralizedImg
@@ -51,13 +58,28 @@ const Tools = () => (
                 height: 75,
               }}
             />
+          </CodeComment>
+        </CodeArea>
+        <CodeArea>
+          <CodeComment style={{ paddingTop: 0 }}>
+            <H3>Yarn</H3>
+            Considerados pela comunidade como uma <a href="https://tableless.com.br/yarn-evolucao-do-npm/">evolução</a>
+            &nbsp;do <strong>NPM</strong>, o <strong>Yarn</strong> é um projeto&nbsp;
+            <a href="https://canaltech.com.br/produtos/O-que-e-open-source/">open source</a> desenvolvido pelo&nbsp;
+            <strong>Facebook</strong> e mantido por grandes empresas (a principal sendo o <strong>Google</strong>).
+            <br /><br />
+            Seu principal diferencial é o uso de <strong>cache</strong> para manter repositórios localmente, permitindo
+            a <strong>instalação e manutenção offline</strong>. A sintaxe dos comandos é <strong>mais simples</strong>
+            &nbsp;que a do NPM e seu <strong>desempenho é muito bom</strong> ao manter projetos de grande escala, se
+            tornando uma preferência em muitas empresas.
+          </CodeComment>
+          <CodeComment>
             <CentralizedImg
               alt="yarn"
               src="https://yarnpkg.com/assets/og_image.png"
               style={{
                 borderRadius: 0,
                 height: 100,
-                marginTop: '2em',
               }}
             />
           </CodeComment>
