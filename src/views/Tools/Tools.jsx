@@ -329,10 +329,29 @@ const Tools = () => (
       <Accordion title="5.6. Visual Studio Code">
         <CodeArea>
           <CodeComment>
-            5.6. Visual Studio Code
-            <H3>Plugins</H3>
+            <strong>Extra do extra,</strong> pode ser considerado favoritismo!
+            <br /><br />
+            <strong>Visual Studio Code</strong>, ou simplesmente <strong>VSCode</strong>, é uma&nbsp;
+            <strong>IDE</strong> comumente utilizada como editor de texto, desenvolvida pela&nbsp;
+            <a href="https://code.visualstudio.com/">Microsoft</a> e lançado como&nbsp;
+            <a href="https://pt.wikipedia.org/wiki/C%C3%B3digo_aberto">código aberto</a>. Possui uma interface&nbsp;
+            <strong>extremamente customizável</strong> e uma <strong>comunidade ativa</strong> responsável por manter
+            o programa atualizado e <strong>desenvolver extensões.</strong>
+            <br /><br />
+            Possui <strong>suporte nativo</strong> à sintaxe&nbsp;
+            <a href="https://code.visualstudio.com/docs/languages/javascript">Javascript</a> e variações (Typescript,
+            JSX, principalmente), com <strong>linter e snippets para autocomplete.</strong> Indo além do Javascript,
+            possui integração com repositórios&nbsp;
+            <a href="https://code.visualstudio.com/docs/editor/versioncontrol#_git-support">Git</a> e plugins para&nbsp;
+            <a href="https://code.visualstudio.com/docs/azure/docker">Docker</a>.
+            <br /><br />
+            Recomendo ele como editor por ter uma <strong>interface mais intuitiva e fácil de customizar</strong>,
+            além de ser <strong>multiplataforma</strong> e ser <strong>leve</strong>. Para aqueles que vem
+            do <a href="https://atom.io/">Atom</a> existe até um&nbsp;
+            <a href="https://github.com/Microsoft/vscode-atom-keybindings">plugin</a> que utiliza os mesmos
+            atalhos <strong>(e facilitam a vida)</strong>!
           </CodeComment>
-          <CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
             <CentralizedImg
               alt="vscode"
               src="https://cdn.freebiesupply.com/logos/large/2x/visual-studio-code-logo-png-transparent.png"
