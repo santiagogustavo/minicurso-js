@@ -49,7 +49,7 @@ const Tools = () => (
             &nbsp;pré-definidos, facilitando muito o processo de <strong>desenvolvimento e build</strong> de projetos
             mais elaborados.
           </CodeComment>
-          <CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
             <CentralizedImg
               alt="npm"
               src="https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg"
@@ -73,7 +73,7 @@ const Tools = () => (
             &nbsp;que a do NPM e seu <strong>desempenho é muito bom</strong> ao manter projetos de grande escala, se
             tornando uma preferência em muitas empresas.
           </CodeComment>
-          <CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
             <CentralizedImg
               alt="yarn"
               src="https://yarnpkg.com/assets/og_image.png"
@@ -99,7 +99,7 @@ const Tools = () => (
             <a href="https://reactjs.org/">React</a>) e <strong>tipagem de dados</strong> (utilizada por&nbsp;
             <a href="https://flow.org/">Flow</a> e <a href="https://www.typescriptlang.org/">Typescript</a>).
           </CodeComment>
-          <CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
             <CentralizedImg
               alt="babel"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Babel_Logo.svg/1200px-Babel_Logo.svg.png"
@@ -134,7 +134,7 @@ const Tools = () => (
               de projeto!
             </strong>
           </CodeComment>
-          <CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
             <CentralizedImg
               alt="es6"
               src="http://www.bobbyberberyan.com/wp-content/uploads/2016/12/ES6LOGO.svg"
@@ -171,7 +171,7 @@ const Tools = () => (
               </li>
             </ul>
           </CodeComment>
-          <CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
             <CentralizedImg
               alt="eslint"
               src="https://cdn.freebiesupply.com/logos/large/2x/eslint-logo-png-transparent.png"
@@ -198,14 +198,13 @@ const Tools = () => (
             <br /><br />
             <strong>O plugin da Airbnb com todas as configurações pode ser utilizado no ESLint!</strong>
           </CodeComment>
-          <CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
             <CentralizedImg
               alt="airbnb"
               src="https://eslint.org/img/logos/airbnb.png"
               style={{
                 borderRadius: 0,
                 height: 50,
-                marginTop: '2em',
               }}
             />
           </CodeComment>
@@ -213,18 +212,70 @@ const Tools = () => (
       </Accordion>
       <Accordion title="5.5. Webpack">
         <CodeArea>
-          <CodeComment>
-            5.5. Webpack
-            <H3>Configurações</H3>
-            <H3>Dev Server</H3>
+          <CodeComment style={{ paddingBottom: 0 }}>
+            <strong>Webpack</strong> é um <strong>module bundler</strong> (&quot;empacotador&quot; de módulos). Seu
+            princípio básico é <strong>juntar</strong> diversos arquivos <strong>.js ou de outras extensões</strong>
+            &nbsp;de um projeto em um <strong>conjunto (bundle)</strong> de arquivos finais.
+            <br /><br />
+            Através de um <strong>grafo de dependências</strong>, o&nbsp;
+            <a href="https://medium.com/@gimenete/how-javascript-bundlers-work-1fc0d0caf2da">bundler</a> obtém
+            informações sobre <strong>como os arquivos são organizados e se comunicam</strong>. Assim, é determinada a
+            melhor forma de <strong>empacotar códigos</strong> de acordo com as configurações passadas.
+            <br /><br />
+            <strong>
+              Os pontos fortes do Webpack são a&nbsp;
+              <a href="https://en.wikipedia.org/wiki/Minification_(programming)">minificação</a> e otimização,
+              responsáveis por melhorar o desempenho e o tempo de carregamento de recursos.
+            </strong>
           </CodeComment>
-          <CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
             <CentralizedImg
               alt="webpack"
               src="https://cdn-images-1.medium.com/max/1600/1*gdoQ1_5OID90wf1eLTFvWw.png"
               style={{
                 borderRadius: 0,
                 height: 100,
+              }}
+            />
+          </CodeComment>
+        </CodeArea>
+        <CodeArea>
+          <CodeComment style={{ paddingTop: 0 }}>
+            <H3>Princípios</H3>
+            O Webpack segue alguns <strong>princípios básicos de funcionamento.</strong> Estes precisam ser
+            especificados para que o bundle seja gerado corretamente:
+            <ul>
+              <li>
+                <strong>Entry:</strong> define <strong>um ou vários</strong> arquivos de entrada, os quais serão usados
+                para gerar o grafo de dependências de acordo com <strong>imports/exports</strong>
+              </li>
+              <li>
+                <strong>Output:</strong> especifica <strong>um ou vários</strong> arquivos de saída, de acordo com os
+                <strong>pontos de entrada</strong>
+              </li>
+              <li>
+                <strong>Loaders:</strong> permitem carregar e empacotar arquivos de&nbsp;
+                <strong>extensões diferentes</strong>. Por padrão o Webpack interpreta arquivos <strong>.js</strong>,
+                então é necessário utilizar <strong>loaders</strong> sempre que há referências para outros formatos
+              </li>
+              <li>
+                <strong>Plugins:</strong> são módulos responsáveis por gerar <strong>builds customizadas</strong> de
+                código. Possuem diversas funcionalidades e são aplicadas <strong>durante o processo de bundle</strong>
+              </li>
+            </ul>
+            <H3>Dev Server</H3>
+            <strong>Servidor de desenvolvimento em localhost,</strong> configurável com execução e&nbsp;
+            recompilação em tempo real <strong>(chamado de &quot;watch mode&quot;).</strong> Permite executar
+            requisições a servidores sem problemas e gera <strong>builds de desenvolvimento</strong> que podem ser
+            utilizadas para testar o código final.
+          </CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
+            <CentralizedImg
+              alt="webpack-schema"
+              src="https://cdn-images-1.medium.com/max/800/0*ieedOgpOlC7UQBZM.png"
+              style={{
+                borderRadius: 0,
+                height: 350,
               }}
             />
           </CodeComment>
