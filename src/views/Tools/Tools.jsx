@@ -22,9 +22,38 @@ const Tools = () => (
       <Accordion title="5.1. Node">
         <CodeArea>
           <CodeComment>
-            5.1. Node
+            <strong>Node</strong>, popularmente conhecido como <strong>node.js</strong>, é um&nbsp;
+            <strong>ambiente de execução</strong> para Javascript, construído sobre a&nbsp;
+            <strong>engine <a href="https://developers.google.com/v8/">V8</a> do Google Chrome.</strong> Focado no
+            desenvolvimento de servidores, seus principais diferenciais são:
+            <ul>
+              <li>
+                <strong>Entrada/saída orientada a eventos:</strong> código responde a requisições assíncronas de acordo
+                com <strong>eventos de usuário</strong> (interações, AJAX, ações síncronas)
+              </li>
+              <li>
+                <strong>Escalabilidade:</strong> ao lidar com eventos, assume-se que&nbsp;
+                <strong>não há execuções bloqueantes</strong> e, ao contrário do que acontece com outras
+                plataformas, <strong>não cria uma tarefa nova</strong> a cada evento. Dessa forma, o Node lida com cada
+                evento utilizando um&nbsp;
+                <a href="https://itnext.io/multi-threading-and-multi-process-in-node-js-ffa5bb5cde98">
+                  gerenciador próprio
+                </a>
+              </li>
+              <li>
+                <strong>Modularidade:</strong> apenas as funcionalidades <strong>básicas</strong> são entregues pelo
+                Node. Qualquer extensão da linguagem é feita através de <strong>módulos e frameworks externos</strong>,
+                que são gerenciados através de <strong>pacotes e dependências (ver tópico NPM!)</strong>
+              </li>
+            </ul>
+            <strong>
+              Os conceitos principais, que viabilizaram o desenvolvimento do Node, são o de&nbsp;
+              <a href="https://tableless.com.br/fluxo-de-execucao-assincrono-em-javascript-callbacks/">
+                fluxo assíncrono
+              </a> e <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/EventLoop">loop de eventos</a>!
+            </strong>
           </CodeComment>
-          <CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
             <CentralizedImg
               alt="nodejs"
               src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Node.js_logo_2015.svg"
@@ -40,7 +69,7 @@ const Tools = () => (
         <CodeArea>
           <CodeComment style={{ paddingBottom: 0 }}>
             <strong>Node Package Manager (ou simplesmente <a href="https://www.npmjs.com/">NPM</a>)</strong>, como o
-            próprio nome sugere, é um gerenciador de pacotes Javascript baseado no <strong>Node</strong>. É responsável
+            próprio nome sugere, é o gerenciador de pacotes Javascript para o <strong>Node</strong>. É responsável
             por armazenar <strong>metadados</strong> sobre projetos, publicar em <strong>repositórios online</strong>
             &nbsp;e gerenciar <strong>dependências</strong>.
             <br /><br />
@@ -274,7 +303,6 @@ const Tools = () => (
               alt="webpack-schema"
               src="https://cdn-images-1.medium.com/max/800/0*ieedOgpOlC7UQBZM.png"
               style={{
-                borderRadius: 0,
                 height: 350,
               }}
             />
