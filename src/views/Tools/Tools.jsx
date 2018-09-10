@@ -148,9 +148,28 @@ const Tools = () => (
       </Accordion>
       <Accordion title="5.4. ESLint">
         <CodeArea>
-          <CodeComment>
-            5.4. ESLint
-            <H3>Padrão Airbnb</H3>
+          <CodeComment style={{ paddingBottom: 0 }}>
+            <strong>ESLint</strong> é um <a href="https://en.wikipedia.org/wiki/Lint_(software)">linter</a> feito
+            especificamente para Javascript. É <strong>muito customizável</strong> e assim como o <strong>Babel</strong>
+            &nbsp;possui uma série de plugins e presets. De fato, pode ser utilizado&nbsp;
+            <strong>em conjunto com o Babel</strong> como uma forma de pré-compilação. Além de analisar códigos na
+            extensão <strong>.js</strong>, pode ser extendido para trabalhar
+            com <strong>frameworks, sintaxes híbridas (como é o caso do JSX) e arquivos de teste</strong>.
+            <br /><br />
+            Os principais motivos para se utilizar um linter são:
+            <ul>
+              <li>
+                <strong>Padronização:</strong> garante que todos os desenvolvedores produzam um código semelhante
+              </li>
+              <li>
+                <strong>Legibilidade:</strong> define estruturas que fazem mais sentido e conseguem ser compreendidas
+                por todos
+              </li>
+              <li>
+                <strong>Manutenibilidade:</strong> pelos motivos anteriores, resulta numa identificação mais rápida
+                e incisiva de erros
+              </li>
+            </ul>
           </CodeComment>
           <CodeComment>
             <CentralizedImg
@@ -161,6 +180,25 @@ const Tools = () => (
                 height: 100,
               }}
             />
+          </CodeComment>
+        </CodeArea>
+        <CodeArea>
+          <CodeComment style={{ paddingTop: 0 }}>
+            <H3>Padrão Airbnb</H3>
+            A equipe de desenvolvimento da <a href="https://www.airbnb.com.br/">Airbnb</a> especifica uma série de&nbsp;
+            <strong>padrões de código</strong> para diversas linguagens.&nbsp;
+            <strong>Com o Javascript não é diferente:</strong> o &quot;guia de estilo&quot;
+            (<a href="https://github.com/airbnb/javascript">styleguide</a>) define&nbsp;
+            <strong>regras sintáticas e semânticas</strong> para a escrita de códigos.
+            <br /><br />
+            Como é um padrão <strong>robusto e restritivo</strong>, detecta com mais facilidade estruturas&nbsp;
+            <strong>legado, antipadrão ou inadequadas</strong>. A mesma equipe que o especificou desenvolveu o
+            <a href="https://airbnb.io/enzyme/docs/guides/jest.html">enzyme</a>, ferramenta muito utilizada na
+            especificação de testes unitários.
+            <br /><br />
+            <strong>O plugin da Airbnb com todas as configurações pode ser utilizado no ESLint!</strong>
+          </CodeComment>
+          <CodeComment>
             <CentralizedImg
               alt="airbnb"
               src="https://eslint.org/img/logos/airbnb.png"
