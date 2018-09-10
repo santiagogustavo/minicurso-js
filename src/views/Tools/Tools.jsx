@@ -16,8 +16,25 @@ const Tools = () => (
     <H1>5. Ferramentas</H1>
     <Content>
       <InfoText>
-        Apêndice e literatura complementar. Algumas ferramentas que uso no dia a dia e que ajudam ou possibilitam o
-        desenvolvimento usando frameworks e afins.
+        <strong>Apêndice e literatura complementar.</strong> Deixo aqui algumas ferramentas que uso no dia a dia e
+        que <strong>ajudam ou possibilitam o desenvolvimento</strong> usando frameworks e afins. São tecnologias&nbsp;
+        <strong>muito utilizadas em códigos de produção</strong> e permitem fazer coisas legais!
+        Assim como em outras linguagens, <strong>não existe apenas uma forma correta</strong> de se fazer algo. De fato,
+        o Javascript possui tantas <strong>estruturas e frameworks diferentes</strong> que isso encoraja tentar de
+        diferentes formas. Como o <strong>&quot;ambiente web&quot;</strong> está em constante mudança, foquei nos
+        principais pilares dos grandes projetos.&nbsp;
+        <br /><br />
+        <strong>
+          É possível que essas ferramentas mudem com o tempo, tanto em sintaxe quanto em funcionamento!
+        </strong>
+        <CentralizedImg
+          alt="hacking"
+          src="https://media.giphy.com/media/eCqFYAVjjDksg/giphy.gif"
+          style={{
+            marginTop: '1em',
+            height: 200,
+          }}
+        />
       </InfoText>
       <Accordion title="5.1. Node">
         <CodeArea>
