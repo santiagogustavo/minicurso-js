@@ -114,12 +114,65 @@ const WtfIsJs = () => (
         </CodeArea>
       </Accordion>
       <Accordion title="1.2. Evolução">
-        1.2. Evolução
-        <H3>ECMAScript</H3>
-        <H3>Multiparadigma</H3>
+        <CodeArea>
+          <CodeComment style={{ paddingBottom: 0 }}>
+            Pouco tempo após seu lançamento e suporte pela <b>Microsoft</b>, a <b>Netscape</b> enviou o Javascript para
+            a <b>ECMA International (European Computer Manufacturers Association)</b> para padronização. A motivação era
+            permitir que desenvolvedores de <b>outros navegadores</b> pudessem implementar o suporte de maneira
+            similar a da Netscape.
+          </CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
+            <CentralizedImg
+              alt="ecma_intl"
+              src="https://upload.wikimedia.org/wikipedia/de/a/a8/Ecma_international_Logo.png"
+              style={{
+                height: 75,
+              }}
+            />
+          </CodeComment>
+        </CodeArea>
+        <CodeArea>
+          <CodeComment style={{ paddingTop: 0 }}>
+            <H3>ECMAScript</H3>
+            O resultado dessa parceria foi a especificação de linguagem de programação&nbsp;
+            <b>ECMAScript (ou simplesmente ES).</b> Sua primeira versão foi lançada em 1997, e progressivamente se
+            adequou a padrões <b>ISO/IEC</b>.
+            <br /><br />
+            Alterações são propostas em <b>eventos internacionais</b> e divulgadas pela própria associação. A versão
+            mais conhecida e com maiores mudanças é a <b>ES6 (ECMAScript2015)</b>.&nbsp;
+            <b>Ela é tão importante que separei um capítulo só para explicá-la!</b>
+            <br /><br />
+            Apesar de Javascript ser a implementação <b>mais próxima do ES</b>, outras linguagens e interpretadores
+            utilizam o padrão proposto pela ECMA.&nbsp;
+            <b>
+              São exemplos:&nbsp;
+              <ul>
+                <li>
+                  <a href="https://developers.google.com/v8/">Chrome V8</a> (Google)
+                </li>
+                <li>
+                  <a href="https://www.adobe.com/devnet/actionscript/learning.html">ActionScript</a> (Adobe)
+                </li>
+                <li>
+                  <a href="https://msdn.microsoft.com/library/hbxc2t98.aspx">JScript</a> (Microsoft)
+                </li>
+              </ul>
+            </b>
+          </CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
+            <CentralizedImg
+              alt="jscript"
+              src="https://upload.wikimedia.org/wikipedia/en/e/e8/Jscript_icon.gif"
+              style={{
+                height: 75,
+              }}
+            />
+          </CodeComment>
+        </CodeArea>
       </Accordion>
       <Accordion title="1.3. Aplicações">
         1.3. Aplicações
+        <H3>Multiparadigma</H3>
         <H3>Client-side</H3>
         <H3>Server-side</H3>
       </Accordion>
