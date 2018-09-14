@@ -16,8 +16,28 @@ const WtfIsJs = () => (
     <H1>1. WTF is JS</H1>
     <Content>
       <InfoText>
-        Este é o capítulo inicial do minicurso de JavaScript, abordei a seguir algumas informações e curiosidades sobre
-        a linguagem.
+        <b>Ahhh... Javascript.</b> Odiada por uns, amada por outros, é uma das&nbsp;
+        <b>linguagens de programação mais importantes e populares</b> em sistemas Web, sobrevivendo bravamente&nbsp;
+        <b>após décadas de seu lançamento!</b>&nbsp;
+        Está presente desde os <b>primórdios da internet</b>, tendo papel fundamental na sua popularização e na
+        história da computação como um todo. Suas características sofreram <b>grandes mudanças</b> com o passar do tempo
+        e o surgimento de novas necessidades, mantendo apenas as funcionalidades essenciais entre suas versões.
+        <br /><br />
+        Neste capítulo introdutório, abordei algumas <b>informações históricas e curiosidades</b> como forma de
+        contextualização e descontração. Embora <b>não seja necessário ler ele antes de começar</b> a programar, é
+        sempre uma literatura interessante. Explico, também, alguns <b>jargões e termos</b> que são muito populares
+        entre os programadores. <b>Alguns pontos importantes serão lembrados adiante no minicurso,</b> então não se
+        preocupe se quiser pulá-lo :)
+        <br /><br />
+        <b>Vamos nessa!</b>
+        <CentralizedImg
+          alt="js"
+          src="https://fsmedia.imgix.net/69/05/d6/3b/4693/4ad7/b469/a8fbf23d5c44/jscript.gif"
+          style={{
+            marginTop: '1em',
+            height: 200,
+          }}
+        />
       </InfoText>
       <Accordion title="1.1. Origem">
         <CodeArea>

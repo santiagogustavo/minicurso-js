@@ -43,8 +43,6 @@ const Advanced = () => (
         o manual da <a href="https://developer.mozilla.org/pt-BR/">MDN</a> (atualizado sempre com as novas convenções e
         tabelas de compatibilidade) e o <a href="http://frontendweekly.co/">Frontend Weekly</a> (muitas técnicas e
         soluções interessantes para problemas).
-        <br /><br />
-        <strong>Vamos nessa!</strong>
         <CentralizedImg
           alt="wizardry"
           src="https://media.giphy.com/media/ms4x9Ipgego8g/giphy.gif"

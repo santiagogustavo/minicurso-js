@@ -37,9 +37,6 @@ const ES6 = () => (
         <a href="https://blog.tecsinapse.com.br/utilizando-es6-no-node-js-com-babel-js-430346d68794">Aqui</a>&nbsp;
         tem um tutorial que ensina como configurar o Babel com o <strong>preset-env</strong> (sempre atualizado com
         o ECMA!).
-        <br /><br />
-        <strong>Vamos nessa!</strong>
-        <br />
         <CentralizedImg
           alt="programming"
           src="https://imasters.com/wp-content/uploads/sites/24/2016/09/4_Progresso4.gif"

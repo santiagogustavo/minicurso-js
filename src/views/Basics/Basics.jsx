@@ -32,8 +32,6 @@ const Basics = () => (
           É importante que se tenha um conhecimento mínimo de lógica de programação para acompanhar as explicações!
         </strong>&nbsp;
         Em pontos onde há termos não tão comuns eu deixei links complementares para ajudar os estudos :)
-        <br /><br />
-        <strong>Vamos nessa!</strong>
         <CentralizedImg
           alt="programming"
           src="https://media.giphy.com/media/wpBCnSSBCbh3q/giphy.gif"
