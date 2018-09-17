@@ -177,9 +177,71 @@ const WtfIsJs = () => (
         <H3>Server-side</H3>
       </Accordion>
       <Accordion title="1.4. Vanilla X Frameworks">
-        1.4. Vanilla X Frameworks
-        <H3>jQuery</H3>
-        <H3>Node</H3>
+        <CodeArea>
+          <CodeComment style={{ paddingBottom: 0 }}>
+            <a href="http://vanilla-js.com/">Vanilla JS</a> é um poderoso framework de Javascript, que está presente em
+            praticamente <b>todas as aplicações web</b>.
+            <br /><br />
+            <b>Sarcasmos a parte</b>, Vanilla é um termo em computação utilizado para definir uma linguagem de
+            programação em seu estado &quot;natural&quot;, sem extensões ou uso de frameworks. No ambiente web, mais
+            especificamente no&nbsp;
+            <a
+              href="https://tableless.com.br/os-dois-tipos-de-front-end-design-e-o-engineer-parte-1-uma-breve-historia/"
+            >
+              Front-end
+            </a>, é muito comum surgirem <b>novas extensões para as linguagens</b>, causando uma obsolescência rápida e
+            tornando mais delicada a manutenção de projetos.
+            <br /><br />
+            Muitas vezes, os frames e bibliotecas fazem <b>operações redundantes e menos eficientes (overhead)</b>.
+            Isso ocorre por <b>decisões de implementação</b>, tais como uso de&nbsp;
+            <b>sintaxe própria e extensões de operações nativas</b>.
+          </CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
+            <CentralizedImg
+              alt="vanilla"
+              // eslint-disable-next-line
+              src={'https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=gEVXNI3DxK1QldV0AsvdTvsxRlI%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6nlh8Tw1It6a2FowGz60oIQY_PTWn8CnL_5aaEFHbrCKaoE8Dr1gYee0gC91MtLq3sGWO9R47vdMy6P7Mo1saycY2nbhUPZxcJ0Tsc04Zua1Z06pH7V7qlOX4chrgIPWmrbrvsc1N5Hng9xMS9Eq3UO3Fc1wGGeczKM8dBZuNXvYRYkHBag-WSDf5q_thA-XtmzVbs'}
+              style={{
+                height: 100,
+              }}
+            />
+          </CodeComment>
+        </CodeArea>
+        <CodeArea>
+          <CodeComment style={{ paddingTop: 0 }}>
+            <H3>jQuery</H3>
+            <a href="https://jquery.com/">jQuery</a> é um dos frameworks de Javascript mais conhecidos e utilizados.
+            De fato, ele é utilizado até em <b>outros frames igualmente populares</b>, como é o caso do&nbsp;
+            <a href="https://getbootstrap.com/">Bootstrap</a>. Suas características principais são:
+            <ul>
+              <li>
+                <b>Sintaxe própria,</b> marcada pelo operador <b>$ e operações declarativas</b>, facilitando a
+                recuperação e manipulação de objetos do DOM
+              </li>
+              <li>
+                <b>Compatibilidade <a href="https://pt.wikipedia.org/wiki/Cross-browser">cross-browser</a></b>, é o
+                principal atrativo e foi seu diferencial num tempo onde boa parte das operações eram
+                implementadas de forma <b>diferente em cada navegador</b>
+              </li>
+            </ul>
+            É um caso bem conhecido de <b>uso excessivo de recursos:</b> por aplicar <b>muitas transformações</b> no
+            código e fornecer <b>suporte entre os navegadores em tempo de execução</b>, acaba sendo&nbsp;
+            {/* eslint-disable-next-line */}
+            <a href="https://medium.com/@trombino.marco/you-might-not-need-jquery-a-2018-performance-case-study-aa6531d0b0c3">
+                bem mais lento
+            </a>.
+          </CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
+            <CentralizedImg
+              alt="jquery"
+              src="https://logodownload.org/wp-content/uploads/2017/10/jquery-logo.png"
+              style={{
+                borderRadius: 0,
+                height: 50,
+              }}
+            />
+          </CodeComment>
+        </CodeArea>
       </Accordion>
       <NavLinks>
         <NextLink to="/2-basics">2. Básico</NextLink>
