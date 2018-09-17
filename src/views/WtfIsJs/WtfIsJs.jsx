@@ -171,10 +171,90 @@ const WtfIsJs = () => (
         </CodeArea>
       </Accordion>
       <Accordion title="1.3. Aplicações">
-        1.3. Aplicações
-        <H3>Multiparadigma</H3>
-        <H3>Client-side</H3>
-        <H3>Server-side</H3>
+        <CodeArea>
+          <CodeComment style={{ paddingBottom: 0 }}>
+            <b>Desde sua concepção,</b> a flexibilidade é uma característica fundamental no Javascript.
+            A linguagem foi expandida para fazer desde <b>operações aritméticas simples</b> até&nbsp;
+            <a href="https://threejs.org/">engines 3D avançadas</a>.&nbsp;
+            <b>Existem infinitas aplicações diferentes:</b> para uma visão mais abrangente podemos fazer uma análise
+            dos múltiplos <b>paradigmas e plataformas de execução</b>.
+          </CodeComment>
+        </CodeArea>
+        <CodeArea>
+          <CodeComment style={{ paddingBottom: 0, paddingTop: 0 }}>
+            <H3>Multiparadigma</H3>
+            <ul>
+              <li>
+                <b>Imperativo/Declarativo:</b> permite <b>descrever os fluxos</b> de controle e de execução,
+                especificando o uso de operadores e atribuições <b>(imperativo)</b>, assim como&nbsp;
+                <b>descrever as lógicas</b> sem precisar lidar com as estruturas internas da linguagem&nbsp;
+                <b>(declarativo)</b>;
+              </li>
+              <li>
+                <b>Orientação a objetos:</b> embora o conceito de classes só tenha sido suportado&nbsp;
+                <b>a partir do ES6</b>, praticamente tudo em Javascript depende do conceito de orientação a
+                objetos. <b>Até os tipos básicos de dados são objetos!</b>
+              </li>
+              <li>
+                <b>Funcional:</b> é um conceito essencial, onde as funções baseiam-se em <b>cálculos matemáticos</b>
+                &nbsp;e minimizam o uso de <b>estados compartilhados e dados mutáveis</b>;
+              </li>
+              <li>
+                <b>Concorrente:</b> embora não trate explicitamente acessos através de diretrizes ou semáforos&nbsp;
+                <b>(parcialmente concorrente)</b>, é possível realizar operações simultâneas e em regiões críticas
+                através de <a href="https://developer.mozilla.org/pt-BR/docs/Web/Guide/AJAX/Getting_Started">AJAX</a>;
+              </li>
+              <li>
+                <b>Reativo:</b> muito presente em <b>frameworks atuais (Angular, Vue e React)</b>, descreve a capacidade
+                do código <b>reagir (ser sensível)</b> a mudanças assíncronas.
+              </li>
+            </ul>
+          </CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
+            <CentralizedImg
+              alt="orly_hate"
+              src="https://i.redd.it/faihjt65cuez.png"
+              style={{
+                borderRadius: 0,
+                height: 250,
+              }}
+            />
+          </CodeComment>
+        </CodeArea>
+        <CodeArea>
+          <CodeComment style={{ paddingTop: 0 }}>
+            <H3>Multiplataforma</H3>
+            <ul>
+              <li>
+                <b>Web:</b> principal <b>&quot;área de atuação&quot;</b> e pioneiro nela! Como exemplo, pode ser
+                utilizado na criação de <b>sites estáticos, sites dinâmicos, emails e landing pages</b>;
+              </li>
+              <li>
+                <b>Desktop:</b> através de plataformas como o <a href="https://electronjs.org/">Electron</a>, é possível
+                desenvolver aplicações nativas para sistemas operacionais de computadores.&nbsp;
+                <b>O processo de geração funciona quase como um navegador abrindo uma página!</b>
+              </li>
+              <li>
+                <b>Mobile:</b> assim como no <b>desktop</b>, existem plataformas para a geração de aplicações nativas
+                em sistemas operacionais mobile&nbsp;
+                <b>(o mais conhecido sendo o <a href="https://facebook.github.io/react-native/">React Native</a>)</b>.
+                Um conceito novo de aplicações, o&nbsp;
+                <a href="https://pplware.sapo.pt/software/pwa-mudarao-forma-usamos-dispositivos/">PWA</a>&nbsp;
+                <b>(Progressive Web Apps)</b>, une aplicações web e mobile.
+              </li>
+            </ul>
+          </CodeComment>
+          <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
+            <CentralizedImg
+              alt="orly_less"
+              src="http://images.virtualdesign.pl/images/7777js-tlkp.jpg"
+              style={{
+                borderRadius: 0,
+                height: 250,
+              }}
+            />
+          </CodeComment>
+        </CodeArea>
       </Accordion>
       <Accordion title="1.4. Vanilla X Frameworks">
         <CodeArea>
