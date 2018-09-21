@@ -29,6 +29,7 @@ export const Logo = styled.img`
 `;
 
 export const LinkLogo = styled(Link)`
+  display: block;
   position: relative;
   transition: transform 0.2s ease;
   overflow: hidden;
