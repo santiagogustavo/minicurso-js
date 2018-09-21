@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
-import GitLogoRaw from 'components/GitLogo';
+import { GitLogo as GitLogoRaw } from 'components/Icons';
 
 export const Shine = keyframes`
   0% { transform: skewX(-15deg) translateX(0); }
