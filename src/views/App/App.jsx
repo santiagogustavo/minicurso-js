@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Navbar from 'components/Navbar';
+import { media } from 'components/Utils';
 import './App.css';
 
 import Root from '../Root';
@@ -15,7 +16,16 @@ import Tools from '../Tools';
 import Route404 from '../404';
 
 const Page = styled.div`
-  padding: 5% 15%;
+  padding: 5%;
+  ${media.medium`
+    padding: 5% 7.5%;
+  `}
+  ${media.large`
+    padding: 5% 10%;
+  `}
+  ${media.extraLarge`
+    padding: 5% 15%;
+  `}
 `;
 
 class App extends Component {

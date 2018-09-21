@@ -33,9 +33,7 @@ export const InfoText = styled.p`
   line-height: 1.5em;
 `;
 
-export const Content = styled.div`
-  padding-left: 25px;
-`;
+export const Content = styled.div``;
 
 export const CodeArea = styled.div`
   display: flex;

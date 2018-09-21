@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { media } from 'components/Utils';
 import { Link } from 'react-router-dom';
 import { GitLogo as GitLogoRaw } from 'components/Icons';
 
@@ -15,12 +16,17 @@ export const Container = styled.div`
 export const Header = styled.header`
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #212121;
   height: auto;
   padding: 20px;
   color: #fafafa;
   font-family: Roboto, sans-serif;
   text-align: center;
+
+  ${media.medium`
+    justify-content: flex-start;
+  `}
 `;
 
 export const Logo = styled.img`
@@ -33,12 +39,14 @@ export const LinkLogo = styled(Link)`
   position: relative;
   transition: transform 0.2s ease;
   overflow: hidden;
-  &:hover {
-    transform: translateY(-5px);
-    &::after {
-      animation: ${Shine} 0.6s ease 1 alternate;
+  ${media.medium`
+    &:hover {
+      transform: translateY(-5px);
+      &::after {
+        animation: ${Shine} 0.6s ease 1 alternate;
+      }
     }
-  }
+  `}
 
   &:focus { outline: none; }
   &::-moz-focus-inner { outline: none; }
@@ -65,9 +73,7 @@ export const GitLogo = styled(GitLogoRaw)`
 `;
 
 export const LogoText = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: none;
   margin-left: 25px;
   font-size: 35px;
   font-weight: 700;
@@ -86,6 +92,12 @@ export const LogoText = styled.div`
     &:focus { outline: none; }
     &::-moz-focus-inner { outline: none; }
   }
+
+  ${media.medium`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  `}
 `;
 
 export const Chapters = styled.div`
