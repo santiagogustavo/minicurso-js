@@ -149,13 +149,7 @@ const Basics = () => (
             não é recomendado, porém, que isso seja feito intuitivamente pelo operador&nbsp;
             <strong>&quot;+&quot;. Para ilustrar ainda melhor: </strong>
             <br /><br />
-            <iframe
-              title="destroyallsoftware wat"
-              width="100%"
-              height="315"
-              src="https://www.youtube.com/embed/BrB0oaSz8Nk"
-              frameBorder="0"
-            />
+            <a href="https://www.destroyallsoftware.com/talks/wat">Wat, por Gary Bernhardt</a>
           </CodeComment>
           <CodeFrame
             title="basics/4_datatypes.js"

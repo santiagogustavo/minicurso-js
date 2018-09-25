@@ -71,7 +71,7 @@ const WtfIsJs = () => (
         <CodeArea>
           <CodeComment style={{ paddingBottom: 0, paddingTop: 0 }}>
             <H3>Protótipo</H3>
-            Para defender a <b>proposta</b> da linguagem em relação com outras já existentes e estreitar as relações
+            Para defender a <b>proposta</b> da linguagem em comparação com outras já existentes e estreitar as relações
             com a <b>Sun Microsystems (desenvolvedora do Java)</b>, a <b>Netscape</b> encarregou <b>Eich</b> para
             elaborar um protótipo.
             <br /><br />
@@ -98,8 +98,8 @@ const WtfIsJs = () => (
             <b>Javascript não tem nada a ver com Java!</b> De fato a confusão vem desde seu lançamento, já que a&nbsp;
             <b>Netscape</b> também desenvolvia na época o suporte para <b>Java</b>.
             <br /><br />
-            Seu nome final foi o resultado de uma <b>campanha de marketing</b> em conjunto com a&nbsp;
-            <b>Sun Microsystems</b> para aproveitar a popularidade das linguagens (e lançá-las em conjunto).
+            Seu nome final foi o resultado de uma <b>campanha de marketing</b> com a <b>Sun Microsystems</b> para
+            aproveitar a popularidade das linguagens (e lançá-las em conjunto).
           </CodeComment>
           <CodeComment style={{ display: 'flex', alignItems: 'center' }}>
             <CentralizedImg
